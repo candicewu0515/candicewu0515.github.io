@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Xia (Candice) Wu is a Ph.D. candidate in Molecular Medicine studying RNA biology, functional genomics, and computational mechanisms of cardiovascular disease."
+    />
+    <title>Xia Wu | RNA Biology, Functional Genomics & Bioinformatics</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,500;6..72,650&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <canvas id="rna-field" aria-hidden="true"></canvas>
+
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Xia Wu home">
+        <span class="brand-mark">XW</span>
+        <span>Xia Wu</span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="#profile">Profile</a>
+        <a href="#journey">Journey</a>
+        <a href="#skills">Skills</a>
+        <a href="#goal">Goal</a>
+      </nav>
+      <button class="icon-button" id="theme-toggle" type="button" aria-label="Toggle color theme" title="Toggle theme">
+        ◐
+      </button>
+    </header>
+
+    <main id="home">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Ph.D. Candidate · Molecular Medicine · University of Iowa</p>
+          <h1><span>Xia</span><span>(Candice)</span><span>Wu</span></h1>
+          <p class="hero-lede">
+            A molecular medicine Ph.D. student growing into the space between bioinformatics,
+            molecular biology and translational medicine.
+          </p>
+          <div class="hero-actions" aria-label="Profile links">
+            <a class="button primary" href="mailto:xwu76@uiowa.edu">Email</a>
+            <a class="button" href="https://github.com/candicewu0515" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="button" href="https://www.linkedin.com/in/candicewu2355" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a class="button" href="https://orcid.org/0009-0006-9852-812X" target="_blank" rel="noreferrer">ORCID</a>
+          </div>
+        </div>
+
+        <figure class="portrait-wrap">
+          <img src="assets/xia-wu-portrait.jpg" alt="Portrait of Xia Wu" />
+          <figcaption>
+            <span>Functional genomics</span>
+            <span>RNA biology</span>
+            <span>Bioinformatics</span>
+          </figcaption>
+        </figure>
+      </section>
+
+      <section class="metric-strip" aria-label="Research snapshot">
+        <div>
+          <strong>Humanities</strong>
+          <span>history, geography, writing and social questions shaped how I think</span>
+        </div>
+        <div>
+          <strong>Biology</strong>
+          <span>neuroscience and wet-lab research gave me a disease-focused foundation</span>
+        </div>
+        <div>
+          <strong>Data</strong>
+          <span>health informatics, coding and AI changed how I approach biology</span>
+        </div>
+        <div>
+          <strong>Bridge</strong>
+          <span>my goal is to connect computation, mechanism and medicine</span>
+        </div>
+      </section>
+
+      <section class="section intro" id="profile">
+        <div class="section-heading">
+          <p class="eyebrow">Profile</p>
+          <h2>A scientist shaped by changing questions</h2>
+        </div>
+        <div class="profile-story">
+          <p>
+            Before I entered science, I was drawn to the humanities. In high school, I loved
+            history, geography, Chinese literature and writing because they helped me understand
+            people, society and change.
+          </p>
+          <p>
+            When I began college in the United States, I first explored sociology and ecology. I
+            cared about human systems and the natural world, but I also felt the limits of simply
+            describing environmental decline. I wanted to work in a field where discovery could
+            become intervention, so I moved into biology and began asking how research could
+            contribute to medicine.
+          </p>
+          <p>
+            Since then, each transition has made my work more interdisciplinary: neuroscience and
+            wet-lab training, health informatics during the COVID era, data science and AI, deep
+            learning in genomics, and now a Ph.D. project that is half experimental and half
+            computational. I keep moving toward the same long-term question: how can biological data
+            become mechanisms that improve health?
+          </p>
+        </div>
+        <div class="research-grid compact">
+          <article class="research-panel active" data-topic="clip">
+            <span class="panel-kicker">Current focus</span>
+            <h3>RNA biology and AGO2 eCLIP</h3>
+            <p>
+              Building human miRNA-mRNA interaction resources and CLIP-seq workflows on SGE/HPC.
+            </p>
+          </article>
+          <article class="research-panel" data-topic="genetics">
+            <span class="panel-kicker">Computational growth</span>
+            <h3>Statistics, coding and AI</h3>
+            <p>
+              Applying Python, R, machine learning and statistical genetics to biological questions.
+            </p>
+          </article>
+          <article class="research-panel" data-topic="ml">
+            <span class="panel-kicker">Career direction</span>
+            <h3>Translational bioinformatics</h3>
+            <p>
+              Preparing for roles that connect molecular biology, large-scale data and drug discovery.
+            </p>
+          </article>
+        </div>
+        <div class="topic-controls" aria-label="Research topic controls">
+          <button class="topic-button active" type="button" data-topic="clip">Current work</button>
+          <button class="topic-button" type="button" data-topic="genetics">Data skills</button>
+          <button class="topic-button" type="button" data-topic="ml">Future path</button>
+        </div>
+      </section>
+
+      <section class="section timeline-section" id="journey">
+        <div class="section-heading">
+          <p class="eyebrow">Journey</p>
+          <h2>My path has changed fields, but not purpose</h2>
+        </div>
+        <ol class="timeline">
+          <li>
+            <time>Before college</time>
+            <h3>Humanities first</h3>
+            <p>
+              I was strongest in history, geography, literature and writing. That background still
+              helps me communicate science and see research questions in a broader social context.
+            </p>
+          </li>
+          <li>
+            <time>UC Irvine</time>
+            <h3>From sociology and ecology to biology</h3>
+            <p>
+              I began with sociology and ecology, then moved into biological sciences because I wanted
+              to contribute to medicine through a field that changes quickly and creates new tools.
+            </p>
+          </li>
+          <li>
+            <time>Wet lab</time>
+            <h3>Neuroscience and experimental training</h3>
+            <p>
+              In retinal and neuroscience research, I learned experimental discipline, model systems
+              and the reality of turning biological questions into measurable evidence.
+            </p>
+          </li>
+          <li>
+            <time>Master's and Ph.D.</time>
+            <h3>Health informatics to molecular bioinformatics</h3>
+            <p>
+              Statistics, COVID-era public health, coding and AI pushed me toward health informatics,
+              deep learning genomics and now a 50/50 wet-dry Ph.D. project in RNA biology.
+            </p>
+          </li>
+        </ol>
+      </section>
+
+      <section class="section work-section" id="skills">
+        <div class="section-heading">
+          <p class="eyebrow">Skills</p>
+          <h2>What I bring to a team</h2>
+        </div>
+        <div class="work-grid">
+          <article>
+            <h3>Wet-lab literacy</h3>
+            <p>Neuroscience, retinal models, imaging, electrophysiology, IHC/IFA, Western blotting and experimental troubleshooting.</p>
+          </article>
+          <article>
+            <h3>Bioinformatics</h3>
+            <p>CLIP-seq, RNA-seq, scRNA-seq, ATAC-seq, small RNA analysis, pipeline design and SGE/HPC workflows.</p>
+          </article>
+          <article>
+            <h3>Data science and AI</h3>
+            <p>Python, R, machine learning, deep learning, statistical modeling, health informatics and clinical data thinking.</p>
+          </article>
+          <article>
+            <h3>Leadership and communication</h3>
+            <p>Teaching, mentoring, peer review, student organization leadership and cross-cultural scientific communication.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section publications">
+        <div class="section-heading">
+          <p class="eyebrow">Selected Evidence</p>
+          <h2>Research output across fields</h2>
+        </div>
+        <div class="publication-list">
+          <article>
+            <h3>The Evolution and Mutational Robustness of Chromatin Accessibility in Drosophila</h3>
+            <p>Genome Biology, 2023 · co-author · doi:10.1186/s13059-023-03079-5</p>
+          </article>
+          <article>
+            <h3>Discover Potential Biomarker of Alzheimer’s Disease Using Metabolomics Data</h3>
+            <p>ICBBS ’25 / ACM, 2026 · doi:10.1145/3778067.3778071</p>
+          </article>
+          <article>
+            <h3>Growth in Medicare Advantage Enrollment and Skilled Nursing Facility Occupancy</h3>
+            <p>ICHSM 2026 · accepted</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section future-section" id="goal">
+        <div class="future-copy">
+          <p class="eyebrow">Future Goal</p>
+          <h2>Becoming a bridge between molecular biology and bioinformatics</h2>
+          <p>
+            I hope to work in biotech or pharma as a scientist who understands both biological
+            mechanisms and computational evidence. I want to help teams move from large-scale data
+            to clearer hypotheses, stronger experiments and better therapeutic decisions.
+          </p>
+        </div>
+        <div class="future-orbit" aria-label="Future goals">
+          <button type="button" data-goal="biology">Mechanism</button>
+          <button type="button" data-goal="data">Data</button>
+          <button type="button" data-goal="medicine">Medicine</button>
+          <p id="goal-note">Hover or tap a word to see how I connect it.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© <span id="year"></span> Xia Wu · Built for GitHub Pages</p>
+      <a href="#home">Back to top</a>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
