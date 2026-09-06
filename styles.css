@@ -161,15 +161,15 @@ main {
 
 .hero {
   display: grid;
-  grid-template-columns: minmax(0, 1.05fr) minmax(320px, 0.75fr);
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 280px);
   align-items: center;
-  gap: clamp(28px, 5vw, 72px);
+  gap: clamp(24px, 5vw, 58px);
   min-height: auto;
-  padding: clamp(48px, 7vw, 96px) clamp(18px, 6vw, 86px) clamp(42px, 6vw, 72px);
+  padding: clamp(34px, 4.5vw, 58px) clamp(18px, 6vw, 86px) clamp(32px, 4vw, 48px);
 }
 
 .hero-copy {
-  max-width: 860px;
+  max-width: 740px;
 }
 
 .eyebrow {
@@ -193,12 +193,13 @@ h2 {
 }
 
 h1 {
-  max-width: 11ch;
-  font-size: clamp(3.4rem, 8vw, 7rem);
+  max-width: 620px;
+  font-size: clamp(2.35rem, 3.9vw, 4rem);
+  line-height: 1.04;
 }
 
 h1 span {
-  display: block;
+  display: inline;
 }
 
 h2 {
@@ -218,17 +219,17 @@ p {
 }
 
 .hero-lede {
-  max-width: 700px;
+  max-width: 620px;
   margin: 18px 0 0;
   color: var(--muted);
-  font-size: clamp(1.05rem, 1.5vw, 1.28rem);
+  font-size: clamp(1rem, 1.25vw, 1.18rem);
 }
 
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  margin-top: 30px;
+  margin-top: 24px;
 }
 
 .button {
@@ -247,39 +248,47 @@ p {
 .portrait-wrap {
   position: relative;
   margin: 0;
+  justify-self: end;
+  width: min(100%, 280px);
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--paper) 82%, transparent);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(14px);
 }
 
 .portrait-wrap img {
   display: block;
-  width: min(100%, 420px);
-  aspect-ratio: 4 / 5;
+  width: 100%;
+  aspect-ratio: 1;
   object-fit: cover;
-  object-position: 50% 22%;
-  border: 1px solid var(--line);
+  object-position: 50% 18%;
+  border: 0;
   border-radius: 8px;
-  box-shadow: var(--shadow);
+  box-shadow: none;
   filter: saturate(0.94) contrast(1.03);
 }
 
 .portrait-wrap figcaption {
-  position: absolute;
-  right: clamp(-24px, -3vw, -8px);
-  bottom: 28px;
-  display: grid;
-  gap: 8px;
+  position: static;
+  display: block;
+  margin-top: 12px;
 }
 
 .portrait-wrap span {
-  width: max-content;
-  max-width: 220px;
-  padding: 8px 10px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: color-mix(in srgb, var(--paper) 86%, transparent);
+  display: block;
+  width: 100%;
+  max-width: none;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
   color: var(--muted);
-  font-size: 0.78rem;
+  font-size: 0.76rem;
   font-weight: 800;
-  backdrop-filter: blur(12px);
+  text-align: center;
+  backdrop-filter: none;
 }
 
 .metric-strip {
@@ -650,15 +659,16 @@ footer a {
   }
 
   h1 {
-    max-width: 11ch;
+    max-width: 720px;
   }
 
   .portrait-wrap img {
-    width: min(100%, 380px);
+    width: 100%;
   }
 
-  .portrait-wrap figcaption {
-    right: 12px;
+  .portrait-wrap {
+    justify-self: start;
+    width: min(100%, 260px);
   }
 
   .metric-strip,
@@ -681,8 +691,8 @@ footer a {
 
   h1 {
     max-width: 100%;
-    font-size: clamp(2.7rem, 13vw, 3.65rem);
-    line-height: 0.95;
+    font-size: clamp(2.1rem, 9vw, 2.75rem);
+    line-height: 1;
   }
 
   h2 {
