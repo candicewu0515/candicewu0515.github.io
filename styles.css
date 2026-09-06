@@ -42,6 +42,7 @@ body {
     linear-gradient(260deg, rgba(168, 61, 91, 0.08), transparent 34%),
     var(--bg);
   color: var(--ink);
+  font-size: 17px;
   font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   letter-spacing: 0;
   overflow-x: hidden;
@@ -103,7 +104,7 @@ nav {
   align-items: center;
   gap: clamp(12px, 2vw, 28px);
   color: var(--muted);
-  font-size: 0.94rem;
+  font-size: 1rem;
   font-weight: 700;
 }
 
@@ -176,7 +177,7 @@ main {
   margin: 0 0 14px;
   max-width: 100%;
   color: var(--teal);
-  font-size: 0.78rem;
+  font-size: 0.84rem;
   font-weight: 800;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -210,7 +211,7 @@ h2 {
 
 h3 {
   margin: 0;
-  font-size: 1rem;
+  font-size: 1.08rem;
   line-height: 1.25;
 }
 
@@ -222,7 +223,7 @@ p {
   max-width: 620px;
   margin: 18px 0 0;
   color: var(--muted);
-  font-size: clamp(1rem, 1.25vw, 1.18rem);
+  font-size: clamp(1.08rem, 1.35vw, 1.28rem);
 }
 
 .hero-actions {
@@ -237,7 +238,7 @@ p {
   align-items: center;
   justify-content: center;
   min-height: 44px;
-  padding: 11px 16px;
+  padding: 12px 17px;
 }
 
 .button.primary {
@@ -285,7 +286,7 @@ p {
   border-radius: 0;
   background: transparent;
   color: var(--muted);
-  font-size: 0.76rem;
+  font-size: 0.82rem;
   font-weight: 800;
   text-align: center;
   backdrop-filter: none;
@@ -313,7 +314,7 @@ p {
   display: block;
   color: var(--berry);
   font-family: Inter, system-ui, sans-serif;
-  font-size: clamp(1.05rem, 2vw, 1.45rem);
+  font-size: clamp(1.18rem, 2vw, 1.55rem);
   line-height: 1.1;
 }
 
@@ -322,7 +323,7 @@ p {
   max-width: 260px;
   margin-top: 14px;
   color: var(--muted);
-  font-size: 0.94rem;
+  font-size: 1.02rem;
   font-weight: 700;
 }
 
@@ -355,6 +356,7 @@ p {
   border-left: 3px solid color-mix(in srgb, var(--teal) 58%, var(--line));
   background: color-mix(in srgb, var(--paper) 58%, transparent);
   color: var(--muted);
+  font-size: 1.05rem;
   line-height: 1.7;
 }
 
@@ -388,7 +390,7 @@ p {
   display: inline-block;
   margin-bottom: 28px;
   color: var(--amber);
-  font-size: 0.76rem;
+  font-size: 0.82rem;
   font-weight: 800;
   text-transform: uppercase;
 }
@@ -400,6 +402,7 @@ p {
 .future-copy p {
   margin: 14px 0 0;
   color: var(--muted);
+  font-size: 1.04rem;
 }
 
 .topic-controls {
@@ -476,14 +479,14 @@ p {
   border-radius: 8px;
   background: color-mix(in srgb, var(--berry) 7%, transparent);
   color: var(--berry);
-  font-size: 0.88rem;
+  font-size: 0.95rem;
   font-weight: 800;
 }
 
 .timeline h3 {
   max-width: 100%;
   margin-top: 40px;
-  font-size: clamp(1.08rem, 1.6vw, 1.3rem);
+  font-size: clamp(1.16rem, 1.6vw, 1.36rem);
 }
 
 .timeline p {
@@ -533,7 +536,7 @@ p {
 
 .future-copy p {
   max-width: 760px;
-  font-size: 1.1rem;
+  font-size: 1.16rem;
 }
 
 .future-orbit {
@@ -608,7 +611,7 @@ footer {
   padding: 26px clamp(18px, 6vw, 86px);
   border-top: 1px solid var(--line);
   color: var(--muted);
-  font-size: 0.9rem;
+  font-size: 0.96rem;
   font-weight: 700;
 }
 
