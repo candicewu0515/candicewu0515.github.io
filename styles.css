@@ -782,3 +782,74 @@ footer a {
     transition-duration: 0.01ms !important;
   }
 }
+
+/* Photos added with the My Story update */
+.photo {
+  margin: 28px 0 0;
+}
+.photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 14px;
+}
+.photo figcaption {
+  margin-top: 10px;
+  font-size: 0.92rem;
+  color: var(--muted);
+}
+.photo-narrow {
+  max-width: 480px;
+}
+
+/* Graduation photo grid (Journey section) */
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 28px;
+}
+.photo-grid img {
+  display: block;
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 12px;
+}
+.photo-grid figcaption {
+  grid-column: 1 / -1;
+  font-size: 0.92rem;
+  color: var(--muted);
+}
+@media (max-width: 640px) {
+  .photo-grid {
+    grid-template-columns: 1fr;
+  }
+  .photo-grid img {
+    height: 300px;
+  }
+}
+
+/* Design polish: story typography + photo depth */
+.story-body {
+  max-width: 760px;
+}
+.story-body > p:first-of-type {
+  color: var(--ink);
+  font-size: 1.18rem;
+}
+.story-body h3 {
+  margin: 40px 0 4px;
+  font-family: Newsreader, Georgia, serif;
+  font-size: 1.45rem;
+  font-weight: 650;
+  line-height: 1.2;
+}
+.story-body p {
+  margin: 14px 0 0;
+}
+.photo img,
+.photo-grid img {
+  box-shadow: 0 16px 40px rgba(26, 32, 29, 0.12);
+}
