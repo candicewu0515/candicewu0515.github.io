@@ -10,7 +10,10 @@ try {
 
 function updateThemeLabel() {
   const dark = root.classList.contains("dark");
-  toggle?.setAttribute("aria-label", dark ? "Switch to light theme" : "Switch to dark theme");
+  const chinese = root.lang.startsWith("zh");
+  const label = chinese ? (dark ? "切换到浅色主题" : "切换到深色主题") : (dark ? "Switch to light theme" : "Switch to dark theme");
+  toggle?.setAttribute("aria-label", label);
+  toggle?.setAttribute("title", label);
   toggle?.setAttribute("aria-pressed", String(dark));
 }
 

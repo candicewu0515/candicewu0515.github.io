@@ -49,6 +49,12 @@ h3 { margin: 0; font-size: 1.12rem; line-height: 1.4; }
 .site-header nav { display: flex; gap: 27px; font-size: .9rem; font-weight: 650; }
 .site-header nav a { border-bottom: 2px solid transparent; padding: 4px 0; }
 .site-header nav a:hover { border-color: var(--teal); color: var(--teal); }
+.header-controls { display: flex; align-items: center; gap: 10px; margin-left: auto; flex-shrink: 0; }
+.language-switch { display: inline-flex; align-items: center; padding: 2px; border: 1px solid var(--line); border-radius: 5px; }
+.language-switch a { display: grid; place-items: center; min-height: 28px; padding: 3px 8px; border-radius: 3px; color: var(--muted); font-size: .75rem; font-weight: 700; line-height: 1.4; }
+.language-switch a[aria-current="page"] { background: var(--teal); color: var(--bg); }
+.language-switch a:hover { color: var(--teal); }
+.language-switch a[aria-current="page"]:hover { color: var(--bg); }
 .icon-button { width: 36px; height: 36px; flex: 0 0 36px; border: 1px solid var(--line); border-radius: 50%; background: var(--bg); color: var(--ink); cursor: pointer; }
 main, footer { width: min(1180px, calc(100% - 64px)); margin-inline: auto; }
 .hero { display: grid; grid-template-columns: minmax(0, 1fr) 270px; align-items: center; gap: 72px; padding-block: 64px 54px; }
@@ -201,3 +207,12 @@ footer a { color: var(--teal); }
   footer { font-size: .74rem; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+/* Native Chinese typography without a remote font dependency. */
+html:lang(zh) body { font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Segoe UI", sans-serif; line-height: 1.85; }
+html:lang(zh) h2, html:lang(zh) .story-body h3 { font-family: "PingFang SC", "Microsoft YaHei", sans-serif; font-weight: 700; letter-spacing: 0; line-height: 1.45; }
+html:lang(zh) h2 { font-size: clamp(1.75rem, 2.6vw, 2.65rem); }
+html:lang(zh) .publications h2 { font-size: clamp(1.65rem, 2.2vw, 2.1rem); }
+html:lang(zh) .eyebrow, html:lang(zh) .chapter-label, html:lang(zh) .skill-number { letter-spacing: .06em; }
+html:lang(zh) .story-body { max-width: 760px; }
+html:lang(zh) .hero-lede { line-height: 1.9; }

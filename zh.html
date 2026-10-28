@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Xia（Candice）Wu，爱荷华大学分子医学博士候选人。结合 RNA 生物学实验与生物信息学分析，探索心血管疾病机制，也关注科研转化与国际学生权益。" />
+    <title>Xia Wu｜RNA 生物学、功能基因组学与生物信息学</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="canonical" href="https://candicewu0515.github.io/zh.html" />
+    <link rel="alternate" hreflang="en" href="https://candicewu0515.github.io/" />
+    <link rel="alternate" hreflang="zh-CN" href="https://candicewu0515.github.io/zh.html" />
+    <link rel="alternate" hreflang="x-default" href="https://candicewu0515.github.io/" />
+    <script src="language.js?v=20261028-lang"></script>
+    <link rel="stylesheet" href="styles.css?v=20261028-lang" />
+  </head>
+  <body>
+    <canvas id="dna-field" aria-hidden="true"></canvas>
+    <a class="skip-link" href="#home">跳转到正文</a>
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Xia Wu 首页">
+        <span class="brand-mark">XW</span>
+        <span>Xia Wu</span>
+      </a>
+      <nav aria-label="主导航">
+        <a href="#profile">简介</a>
+        <a href="#journey">经历</a>
+        <a href="#story">我的故事</a>
+        <a href="#skills">能力</a>
+        <a href="#goal">未来方向</a>
+      </nav>
+      <div class="header-controls">
+        <div class="language-switch" role="group" aria-label="Language / 语言">
+          <a href="index.html?lang=en" lang="en" hreflang="en" data-language="en">EN</a>
+          <a href="zh.html?lang=zh" lang="zh-CN" hreflang="zh-CN" data-language="zh" aria-current="page">中文</a>
+        </div>
+        <button class="icon-button" id="theme-toggle" type="button" aria-label="切换明暗主题" title="切换主题">
+          ◐
+        </button>
+      </div>
+    </header>
+    <main id="home">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">爱荷华大学 · 分子医学博士候选人</p>
+          <h1>Xia (Candice) Wu</h1>
+          <p class="hero-lede">
+            我把实验和计算分析结合起来，研究疾病背后的生物学机制。我也在学习如何让科研成果走向实际应用，并为身边的国际学生发声、提供支持。
+          </p>
+          <div class="hero-actions" aria-label="个人主页与联系方式">
+            <a class="button primary" href="mailto:xwu76@uiowa.edu">联系邮箱</a>
+            <a class="button" href="https://github.com/candicewu0515" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="button" href="https://www.linkedin.com/in/candicewu2355" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a class="button" href="https://orcid.org/0009-0006-9852-812X" target="_blank" rel="noreferrer">ORCID</a>
+          </div>
+        </div>
+
+        <figure class="portrait-wrap">
+          <img src="assets/xia-wu-portrait.jpg" alt="Xia Wu 的个人肖像" width="1206" height="1206" fetchpriority="high" decoding="async" />
+          <figcaption>
+            <span>功能基因组学 · RNA 生物学 · 生物信息学</span>
+          </figcaption>
+        </figure>
+      </section>
+      <div class="path-strip" aria-label="我的学习与研究路径"><span>人文学科</span><b aria-hidden="true">→</b><span>实验生物学</span><b aria-hidden="true">→</b><span>计算分析</span><b aria-hidden="true">→</b><span>转化生物信息学</span></div>
+      <section class="section" id="profile">
+        <div class="section-heading"><p class="eyebrow">简介</p><h2>研究生物与数据，也关心身边的人</h2></div>
+        <div class="profile-intro"><p>我目前是爱荷华大学分子医学专业的博士候选人，在 Boudreau 实验室研究人体组织中 AGO2、微小 RNA（miRNA）与信使 RNA（mRNA）的相互作用，重点关注心房颤动。</p><p>从人文学科到神经科学，再到健康信息学，我的研究方向几经变化，但始终围绕着同一个问题：怎样利用生物学数据理解疾病，并推动医学进步？</p></div>
+        <div class="research-grid">
+          <article><p class="panel-kicker">在实验台前</p><h3>RNA 生物学</h3><p>通过人体组织实验和 AGO2 eCLIP，绘制 miRNA 与 mRNA 的相互作用图谱。</p></article>
+          <article><p class="panel-kicker">在电脑前</p><h3>功能基因组学</h3><p>开展测序数据分析与统计遗传学研究，搭建分析流程，让复杂数据成为可以解释的证据。</p></article>
+          <article><p class="panel-kicker">在学生群体中</p><h3>学生权益与支持</h3><p>为国际学生发声，分享经验、解答疑问，从入学前就帮助大家适应新的环境。</p><a class="text-link" href="#story-community">为什么我在意这件事 ↗</a></article>
+        </div>
+      </section>
+      <section class="section" id="journey">
+        <div class="section-heading"><p class="eyebrow">经历</p><h2>一路走过的学校与实验室</h2><p>加州 → 纽约 → 爱荷华</p></div>
+        <ol class="school-grid"><li><div class="school-copy"><span class="school-number">01</span><h3>加州大学尔湾分校</h3><p class="school-degree">生物科学学士 · 2021 年</p><p>在 Seiler 实验室接触神经科学，开始了最初的科研训练。</p><a class="text-link" href="#story-uci">阅读这段经历 <span aria-hidden="true">↗</span></a></div><figure class="school-photo school-photo--uci">
+              <a class="photo-link" href="assets/uci-grad-gross.jpg" target="_blank" rel="noopener" aria-label="查看完整照片：Xia Wu 在加州大学尔湾分校 Sue and Bill Gross Hall 前"><img src="assets/uci-grad-gross.jpg" alt="Xia Wu 在加州大学尔湾分校 Sue and Bill Gross Hall 前" width="1206" height="818" loading="lazy" decoding="async" /></a>
+              <figcaption>2021 年，在加州大学尔湾分校毕业。</figcaption>
+            </figure></li>
+<li><div class="school-copy"><span class="school-number">02</span><h3>威尔康奈尔医学院</h3><p class="school-degree">健康信息学硕士 · 2023 年</p><p>学习编程、统计，以及数据在医疗健康领域的应用。</p><a class="text-link" href="#story-new-york">阅读这段经历 <span aria-hidden="true">↗</span></a></div><figure class="school-photo school-photo--cornell">
+              <a class="photo-link" href="assets/cornell-grad-ceremony.jpg" target="_blank" rel="noopener" aria-label="查看完整照片：Xia Wu 参加威尔康奈尔医学院毕业典礼"><img src="assets/cornell-grad-ceremony.jpg" alt="Xia Wu 参加威尔康奈尔医学院毕业典礼" width="348" height="604" loading="lazy" decoding="async" /></a>
+              <figcaption>2023 年，硕士毕业典礼。</figcaption>
+            </figure></li>
+<li><div class="school-copy"><span class="school-number">03</span><h3>洛克菲勒大学</h3><p class="school-degree">研究助理 · 硕士期间</p><p>在 Zhao 实验室开展计算遗传学与深度学习研究。</p><a class="text-link" href="#story-new-york">阅读这段经历 <span aria-hidden="true">↗</span></a></div><figure class="school-photo school-photo--rockefeller">
+              <a class="photo-link" href="assets/cornell-grad-rockefeller.jpg" target="_blank" rel="noopener" aria-label="查看完整照片：Xia Wu 穿着康奈尔毕业礼服，在洛克菲勒大学门前留影"><img src="assets/cornell-grad-rockefeller.jpg" alt="Xia Wu 穿着康奈尔毕业礼服，在洛克菲勒大学门前留影" width="1206" height="904" loading="lazy" decoding="async" /></a>
+              <figcaption>康奈尔毕业当天，在洛克菲勒大学门前留影。</figcaption>
+            </figure></li>
+<li><div class="school-copy"><span class="school-number">04</span><h3>爱荷华大学</h3><p class="school-degree">分子医学博士候选人</p><p>在 Boudreau 实验室，将 RNA 生物学实验与生物信息学分析结合起来。</p><a class="text-link" href="#story-iowa">阅读这段经历 <span aria-hidden="true">↗</span></a></div><figure class="school-photo school-photo--iowa">
+              <a class="photo-link" href="assets/white-coat.jpg" target="_blank" rel="noopener" aria-label="查看完整照片：Xia Wu 参加爱荷华大学实验服授予仪式"><img src="assets/white-coat.jpg" alt="Xia Wu 参加爱荷华大学实验服授予仪式" width="1206" height="1608" loading="lazy" decoding="async" /></a>
+              <figcaption>2024 年 8 月，实验服授予仪式。</figcaption>
+            </figure></li></ol>
+        <p class="photo-hint">点击照片可查看完整原图。</p>
+      </section>
+      <section class="section story-section" id="story">
+        <div class="section-heading"><p class="eyebrow">关于我</p><h2>我的故事</h2><p>换过城市，也换过研究方向；每一段经历都留下了自己的印记。</p></div>
+        <div class="story-layout">
+          <aside class="story-index"><nav aria-label="故事章节"><p class="eyebrow">故事目录</p><a href="#story-roots"><span>01</span>从人文学科出发</a>
+<a href="#story-uci"><span>02</span>加州大学尔湾分校</a>
+<a href="#story-new-york"><span>03</span>康奈尔与洛克菲勒</a>
+<a href="#story-iowa"><span>04</span>爱荷华大学</a>
+<a href="#story-consulting"><span>05</span>开始学习商业</a>
+<a href="#story-community"><span>06</span>为国际学生发声</a>
+<a href="#story-life"><span>07</span>实验室之外</a>
+<a href="#story-next"><span>08</span>下一步</a></nav></aside>
+          <div class="story-body"><div class="story-opening">
+          <p>
+            我在爱荷华大学攻读分子医学博士，研究方向是 RNA 生物学与生物信息学。我的博士课题正在绘制真实人类心脏组织中的 AGO2–miRNA–mRNA 相互作用图谱，希望借此理解心房颤动这种常见的心律失常，并寻找新的治疗靶点。
+          </p>
+          <p>
+            一路换过几个领域，我关心的问题其实一直很具体：实验室里得到的数据，怎样才能帮助病人？每一次转向，都是想离这个答案再近一点。
+          </p>
+          </div><article class="story-chapter" id="story-roots"><p class="chapter-label">01 / 从人文学科出发</p><h3>从人文学科出发</h3>
+          <p>
+            在国内读高中时，我学的是文科，最喜欢、也最擅长历史和地理。它们教会我把人放进更大的社会背景里理解，追问变化为什么发生，也教会我怎样把复杂的事情讲清楚。
+          </p>
+          <p>
+            这些训练到现在仍然很有用。做科研不只是掌握技术，还要解释结果为什么重要，让别人理解你的问题，并把数据组织成有说服力的论证。在进入生物学之前，人文学科已经给了我这样的基础。
+          </p>
+          </article>
+<article class="story-chapter" id="story-uci"><p class="chapter-label">02 / 加州大学尔湾分校</p><h3>在加州，从眼科研究开始</h3>
+          <p>
+            来美国读本科后，我最初接触的是社会学和生态学。我关心社会如何运转，也关心自然环境，但渐渐发现，只能描述一个问题、却不知道如何改变它，会让我感到无力。我想进入一个能把发现转化为实际干预的领域。
+          </p>
+          <p>
+            于是，我转向了生物学。在加州大学尔湾分校读生物科学期间，我对神经生物学产生了浓厚兴趣，并加入 Sue and Bill Gross 干细胞研究中心的 Seiler 实验室。我们研究年龄相关性黄斑变性，探索由人胚胎干细胞培养的视网膜类器官能否帮助退化的视网膜恢复功能。日常工作包括视网膜电图、免疫组织化学染色、光学相干断层扫描（OCT）、行为学测试和成像。后来，我担任研究助理，负责自己的项目，也指导低年级学生。这段时间，我获得了 Excellence in Research Award，并入选 Dean’s Honor List。
+          </p>
+          <h3>几乎独自工作的两年</h3>
+          <p>
+            疫情来临后，实验室变得空荡荡的，近两年的时间里，我大多独自工作。我一直与抑郁症相处，而那段孤独又让一切更难了。那是科研训练中最艰难的一段：进展缓慢，未来也不确定。现在回头看，走过那段日子，让我学会了在没有人看见的时候，仍然一点点往前走。
+          </p>
+          <h3>一次海报展示，让我看见自己的短板</h3>
+          <p>
+            那段时间的一次学术海报展示，让我意识到：我能完成实验，却还不能充分理解和解释实验背后的数据。我需要更扎实的统计学基础，也需要更强的数据分析能力。于是，我辅修了健康信息学。这个决定，后来改变了我的研究方向。
+          </p>
+          </article>
+<article class="story-chapter" id="story-new-york"><p class="chapter-label">03 / 康奈尔与洛克菲勒</p><h3>来到纽约，学习健康信息学</h3>
+          <p>
+            本科毕业后，我来到纽约，在威尔康奈尔医学院攻读健康信息学硕士，学习编程、数据管理、人工智能和医疗保险政策。我开始理解，医疗数据是怎样一步步进入实际决策的。
+          </p>
+          <h3>马路对面的洛克菲勒大学</h3>
+          <p>
+            读硕士期间，我也在马路对面的洛克菲勒大学 Zhao 实验室担任研究助理，参与计算遗传学和基因组学研究。我们利用深度卷积神经网络，预测三种果蝇的染色质可及性，也就是基因组哪些区域更容易被细胞内的分子接触和读取。这项工作后来发表在 Genome Biology。
+          </p>
+          <p>
+            在尔湾积累的实验经验，加上在纽约学到的计算方法，让我越来越想做一个能把两者结合起来的项目：亲自设计实验、分析数据，再回到生物学机制中寻找解释。
+          </p>
+          </article>
+<article class="story-chapter" id="story-iowa"><p class="chapter-label">04 / 爱荷华大学</p><h3>在爱荷华，把实验和计算连起来</h3>
+<figure class="story-photo">
+              <a class="photo-link" href="assets/lab-mirna.jpg" target="_blank" rel="noopener" aria-label="查看完整照片：Xia Wu 在实验室桌前，屏幕上展示着人体 miRNA 相互作用数据"><img src="assets/lab-mirna.jpg" alt="Xia Wu 在实验室桌前，屏幕上展示着人体 miRNA 相互作用数据" width="1206" height="905" loading="lazy" decoding="async" /></a>
+              <figcaption>在 Boudreau 实验室做博士课题：从实验、数据分析，到建设可共享的研究资源。</figcaption>
+            </figure>
+          <p>
+            带着这样的想法，我来到爱荷华大学攻读分子医学博士。在 Boudreau 实验室，我的工作大约一半是湿实验，一半是计算分析。博士课题利用 eCLIP 测序，绘制人类心脏组织中的 AGO2–miRNA–mRNA 相互作用图谱，并探索这些相互作用与房颤遗传风险之间的关系。对我来说，这像是在绘制一张尚未完善的地图，希望后续研究能沿着它找到新的治疗方向。
+          </p>
+          <p>
+            这个项目覆盖了从样本到解释的完整过程：处理人体组织、开展实验、分析数据，将结果与临床表型联系起来，再研究其中尚不明确的遗传变异功能。我也在把这些数据整理成数据库，并通过网站开放共享。未来，我希望将资源拓展到 12 种人体组织，建立相应的 miRNA 相互作用图谱，进一步探索相关变异的分子诊断价值，让研究有机会服务于不同疾病的检测。这些成果也可能形成新的知识产权，甚至专利。
+          </p>
+          <p>
+            在这条路上，我还参与过泛癌多组学、阿尔茨海默病代谢组学生物标志物，以及染色质可及性进化等研究。研究对象不同，我追问的仍然是：数据告诉了我们什么，接下来该怎么做？
+          </p>
+          </article>
+<article class="story-chapter" id="story-consulting"><p class="chapter-label">05 / 开始学习商业</p><h3>为什么开始关注生命科学咨询</h3>
+          <p>
+            在爱荷华的转化医学训练，让我更认真地思考科研怎样从实验台走向临床。我也逐渐发现，光有科学发现还不够：风险投资、技术转移和早期项目孵化，都可能决定一项成果能否继续走下去。而这些，恰恰是我当时不熟悉的部分。
+          </p>
+          <p>
+            所以，我像当初学习生物信息学一样，开始自学商业知识。我自费上课，把 AI 当作学习伙伴，帮助理解概念、讨论问题、检验自己的思路。我也练习案例面试，学习怎样拆解一个复杂问题，并用证据支持建议。平时除了读论文，也会关注行业报告、STAT 新闻和临床试验结果，希望慢慢补上对整个行业的理解。
+          </p>
+          <p>
+            在一次医疗健康案例竞赛中，我所在的团队进入了半决赛。
+          </p>
+          <p>
+            我还在这个领域的起点。但从人文学科到生物学，再从湿实验走向计算分析，我已经经历过几次重新学习。每一次，新学到的东西都会让我更好地使用过去的积累。现在，我希望继续学习怎样权衡选择、理解市场，并把分析转化成可以执行的决策。
+          </p>
+          </article>
+<article class="story-chapter" id="story-community"><p class="chapter-label">06 / 为国际学生发声</p><h3>愿意发声，也愿意搭把手</h3>
+<figure class="story-photo">
+              <a class="photo-link" href="assets/ams-workshop.jpg" target="_blank" rel="noopener" aria-label="查看完整照片：爱荷华大学的学生活动现场"><img src="assets/ams-workshop.jpg" alt="爱荷华大学的学生活动现场" width="1206" height="905" loading="lazy" decoding="async" /></a>
+              <figcaption>在爱荷华，和同学们一起交流、建立联系。</figcaption>
+            </figure>
+          <p>
+            支持国际学生，对我来说是一件很具体、也很个人的事。我愿意为我们的权益和日常处境发声，也愿意在别人需要帮助时搭把手。很多同学还没入学，就已经通过社交媒体联系过我。我会分享自己的经历，回答学习和生活中的问题，帮大家找到资源，也希望他们来到一个陌生地方时，能少一点不安。
+          </p>
+          <p>
+            在加州大学尔湾分校时，我曾担任生物科学国际学生协会的执行委员会成员，负责社交媒体。在爱荷华，我担任多元文化科学家协会（AMS）主席，组织了 20 多场活动，服务 400 多名学生；同时担任国际学生咨询委员会（ISAB）的传播负责人，参与权益倡议、入学前资源准备，以及 Fresh Check Day、心理健康日和春节等活动。我也曾在美国红十字会做志愿者，参与献血活动和灾害应对准备培训。
+          </p>
+          <p>
+            心理健康也是我很在意的议题。心理治疗让我的抑郁症状逐渐好转，我也希望更多人能获得支持，不必独自承受。科研值得认真对待，做科研的人同样值得被关心。
+          </p>
+          </article>
+<article class="story-chapter" id="story-life"><p class="chapter-label">07 / 实验室之外</p><h3>回头看，经历慢慢连成了一条线</h3>
+          <p>
+            我很欣赏生物信息学研究者 Tommy Tang。他在博士四年级，因为电子表格无法处理自己的数据，开始自学编程。他常分享的一个想法让我印象很深：向前走时未必知道每一步的意义，回头看，经历却会慢慢连起来。从湿实验到命令行、从生物学到计算生物学，我在他的经历里看到了与自己相似的部分。
+          </p>
+          <p>
+            人文学科教我表达，实验训练让我尊重证据，数据分析让我学会从更大的尺度看问题。现在，商业学习又让我开始理解决策。这些经历并没有彼此取代，而是在慢慢汇合：让我既能理解研究本身，也能思考成果怎样真正用到病人身上。
+          </p>
+          <h3>实验室之外</h3>
+<figure class="story-photo">
+              <a class="photo-link" href="assets/dance-dunes.jpg" target="_blank" rel="noopener" aria-label="查看完整照片：沙丘上的舞者剪影"><img src="assets/dance-dunes.jpg" alt="沙丘上的舞者剪影" width="1206" height="804" loading="lazy" decoding="async" /></a>
+              <figcaption>跳跳舞，也给自己留一点探索的空间。</figcaption>
+            </figure>
+          <p>
+            不在实验室的时候，我常常在剧院，或是在旅行途中。我看过至少一百场现场演出，从音乐剧、话剧到歌剧，每次灯光暗下来的那一刻，还是会很期待。我也喜欢跳舞，已经去过八个国家，还想继续看更多地方。剧场和旅途，是我给自己充电的方式。
+          </p>
+          <p>
+            我还在学习法语和西班牙语。用另一种语言表达一个想法、和别人聊上几句，这种日常的小进步很有意思。
+          </p>
+          <p>
+            我也坚持运动，读博以来减重约 20 公斤。家里还有一只猫，陪我过科研之外的日子。
+          </p>
+          </article>
+<article class="story-chapter" id="story-next"><p class="chapter-label">08 / 下一步</p><h3>接下来，我想做什么</h3>
+          <p>
+            现在，我一边推进博士研究，一边补充商业知识，也在为未来从科研走向产业做准备。我希望进入生物技术或制药行业，既理解生物学机制和计算证据，也能参与更实际的判断：哪些项目值得优先投入，应该关注哪些患者，以及一项治疗如何真正落地。如果你也在这些方向上做研究、开发产品或组建团队，我很愿意交流。
+          </p>
+          <p>
+            回头看，这一路的起点其实都是好奇心。一个问题带来下一次尝试，也让我继续往前走。
+          </p></article></div>
+        </div>
+      </section>
+      <section class="section work-section" id="skills">
+        <div class="section-heading"><p class="eyebrow">能力</p><h2>我能做什么，还在学什么</h2><p>从具体的实验和分析方法，到与人合作、沟通和组织活动。</p></div>
+        <div class="work-grid">
+<article><span class="skill-number">01 / 实验研究</span><h3>实验生物学</h3><ul>
+<li><strong>RNA 生物学：</strong> 人体组织样本处理、AGO2 eCLIP，以及 miRNA–mRNA 相互作用研究。</li>
+<li><strong>视网膜研究：</strong> 视网膜类器官、视网膜电图、OCT 和行为学测试。</li>
+<li><strong>实验方法：</strong> 免疫组织化学与免疫荧光染色、Western blot、成像及实验问题排查。</li>
+</ul></article>
+<article><span class="skill-number">02 / 测序分析</span><h3>生物信息学与基因组学</h3><ul>
+<li><strong>测序数据：</strong> CLIP-seq、RNA-seq、scRNA-seq、ATAC-seq 和小 RNA 分析。</li>
+<li><strong>结果解释：</strong> 功能基因组学、遗传变异分析，以及与临床表型的关联研究。</li>
+<li><strong>项目经验：</strong> 泛癌多组学、代谢组学生物标志物和染色质可及性研究。</li>
+</ul></article>
+<article><span class="skill-number">03 / 编程与计算</span><h3>编程与数据科学</h3><ul>
+<li><strong>数据分析：</strong> Python、R、统计建模与数据可视化。</li>
+<li><strong>机器学习：</strong> 预测建模，以及深度卷积神经网络在基因组学中的应用。</li>
+<li><strong>分析工具与流程：</strong> 分析流程搭建、SGE/HPC 高性能计算工作流，以及用于共享数据的网站资源。</li>
+</ul></article>
+<article><span class="skill-number">04 / 医疗与转化</span><h3>健康信息学与转化研究</h3><ul>
+<li><strong>医疗数据：</strong> 数据管理、临床证据与医疗政策研究。</li>
+<li><strong>转化研究：</strong> 将分子层面的发现与疾病机制、潜在治疗方向联系起来。</li>
+<li><strong>正在学习：</strong> 生命科学商业知识、案例分析和咨询中的问题分析方法。</li>
+</ul></article>
+<article><span class="skill-number">05 / 组织与倡议</span><h3>学生组织与权益倡议</h3><ul>
+<li><strong>组织经历：</strong> AMS 主席、国际学生咨询委员会（ISAB）传播负责人。</li>
+<li><strong>学生支持：</strong> 国际学生权益倡议、入学前答疑、活动组织与社交媒体交流。</li>
+<li><strong>科研沟通：</strong> 教学、学生指导、同行评审与跨文化合作。</li>
+</ul></article>
+<article><span class="skill-number">06 / 语言与表达</span><h3>语言与持续学习</h3><ul>
+<li><strong>中文与英文：</strong> 在学习、工作和日常生活中与不同文化背景的人交流。</li>
+<li><strong>法语与西班牙语：</strong> 正在持续学习中。</li>
+<li><strong>人文学科基础：</strong> 写作、演讲，以及把复杂问题解释清楚。</li>
+</ul></article></div>
+      </section>
+      <section class="section publications" id="publications" aria-labelledby="publications-heading">
+        <div class="section-heading">
+          <p class="eyebrow">部分研究成果</p>
+          <h2 id="publications-heading">论文发表</h2>
+        </div>
+        <div class="publication-list">
+          <article>
+            <h3><a href="https://doi.org/10.1186/s13059-023-03079-5" target="_blank" rel="noopener">果蝇染色质可及性的进化与突变稳健性</a></h3>
+            <p>Genome Biology · 2023 年 · 共同作者</p>
+            <a class="publication-doi" href="https://doi.org/10.1186/s13059-023-03079-5" target="_blank" rel="noopener">DOI: 10.1186/s13059-023-03079-5 ↗</a>
+          </article>
+          <article>
+            <h3><a href="https://doi.org/10.1145/3778067.3778071" target="_blank" rel="noopener">利用代谢组学数据发现阿尔茨海默病的潜在生物标志物</a></h3>
+            <p>ICBBS 2025 · ACM · 2026 年 1 月在线发表</p>
+            <a class="publication-doi" href="https://doi.org/10.1145/3778067.3778071" target="_blank" rel="noopener">DOI: 10.1145/3778067.3778071 ↗</a>
+          </article>
+        </div>
+        <div class="forthcoming-publication">
+          <p class="publication-status">会议论文 · 待出版</p>
+          <h3>Medicare Advantage 参保人数增长与专业护理机构入住率</h3>
+          <p>ICHSM 2026 · 已获 IOS Conference Proceedings 接收</p>
+        </div>
+      </section>
+
+      <section class="section future-section" id="goal">
+        <p class="eyebrow">下一步</p><h2>把计算分析、分子机制与转化研究连接起来</h2>
+        <p>我希望进入生物技术或制药行业，发挥实验研究和计算分析两方面的积累，帮助团队从数据中提出更清晰的假设，设计更扎实的实验，并为治疗方案的研发提供依据。</p>
+        <a class="button primary" href="mailto:xwu76@uiowa.edu">欢迎联系我 <span aria-hidden="true">↗</span></a>
+      </section>
+    </main>
+    <footer><p>© <span id="year">2026</span> Xia Wu</p><a href="#home">返回顶部 ↑</a></footer>
+    <script src="app.js?v=20261028-lang" defer></script>
+  </body>
+</html>
