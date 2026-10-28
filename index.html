@@ -9,17 +9,10 @@
     />
     <title>Xia Wu | RNA Biology, Functional Genomics & Bioinformatics</title>
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,500;6..72,650&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css?v=20261028" />
   </head>
   <body>
-    <canvas id="rna-field" aria-hidden="true"></canvas>
-
+    <a class="skip-link" href="#home">Skip to content</a>
     <header class="site-header">
       <a class="brand" href="#home" aria-label="Xia Wu home">
         <span class="brand-mark">XW</span>
@@ -36,15 +29,15 @@
         ◐
       </button>
     </header>
-
     <main id="home">
       <section class="hero">
         <div class="hero-copy">
           <p class="eyebrow">Ph.D. Candidate · Molecular Medicine · University of Iowa</p>
           <h1>Xia (Candice) Wu</h1>
           <p class="hero-lede">
-            A molecular medicine Ph.D. student growing into the space between bioinformatics,
-            molecular biology, translational medicine — and life sciences consulting.
+            I bring experimental biology and computation together to understand human disease.
+            Along the way, I’m learning how discoveries become treatments — and speaking up
+            for the international student community I’m part of.
           </p>
           <div class="hero-actions" aria-label="Profile links">
             <a class="button primary" href="mailto:xwu76@uiowa.edu">Email</a>
@@ -55,151 +48,54 @@
         </div>
 
         <figure class="portrait-wrap">
-          <img src="assets/xia-wu-portrait.jpg" alt="Portrait of Xia Wu" />
+          <img src="assets/xia-wu-portrait.jpg" alt="Portrait of Xia Wu" width="1206" height="1206" fetchpriority="high" decoding="async" />
           <figcaption>
             <span>Functional genomics · RNA biology · Bioinformatics</span>
           </figcaption>
         </figure>
       </section>
-
-      <section class="metric-strip" aria-label="Research snapshot">
-        <div>
-          <strong>Humanities</strong>
-          <span>history, geography, writing and social questions shaped how I think</span>
-        </div>
-        <div>
-          <strong>Biology</strong>
-          <span>neuroscience and wet-lab research gave me a disease-focused foundation</span>
-        </div>
-        <div>
-          <strong>Data</strong>
-          <span>health informatics, coding and AI changed how I approach biology</span>
-        </div>
-        <div>
-          <strong>Bridge</strong>
-          <span>my goal is to connect computation, mechanism and medicine</span>
+      <div class="path-strip" aria-label="My path"><span>Humanities</span><b aria-hidden="true">→</b><span>Experimental biology</span><b aria-hidden="true">→</b><span>Computation</span><b aria-hidden="true">→</b><span>Medicine</span></div>
+      <section class="section" id="profile">
+        <div class="section-heading"><p class="eyebrow">Profile</p><h2>Biology, data, and the people behind them.</h2></div>
+        <div class="profile-intro"><p>I’m a Ph.D. candidate in Molecular Medicine at the University of Iowa. In the Boudreau lab, I study how AGO2, microRNAs, and messenger RNAs interact in human tissues, with a focus on atrial fibrillation.</p><p>My path began in the humanities, moved through neuroscience and health informatics, and brought me to a question I still follow: how can biological data help us understand disease and improve medicine?</p></div>
+        <div class="research-grid">
+          <article><p class="panel-kicker">At the bench</p><h3>RNA biology</h3><p>Human tissue experiments and AGO2 eCLIP to map miRNA–mRNA interactions.</p></article>
+          <article><p class="panel-kicker">At the computer</p><h3>Functional genomics</h3><p>Sequencing analysis, statistical genetics, and pipelines that make complex data usable.</p></article>
+          <article><p class="panel-kicker">In the community</p><h3>Student advocacy</h3><p>Speaking up for international students and helping people find their footing, even before they arrive.</p><a class="text-link" href="#story-community">Why this matters to me ↗</a></article>
         </div>
       </section>
-
-      <section class="section intro" id="profile">
-        <div class="section-heading">
-          <p class="eyebrow">Profile</p>
-          <h2>A scientist shaped by changing questions</h2>
-        </div>
-        <div class="profile-story">
-          <p>
-            Before I entered science, I was drawn to the humanities. In high school, I loved
-            history, geography, Chinese literature and writing because they helped me understand
-            people, society and change.
-          </p>
-          <p>
-            When I began college in the United States, I first explored sociology and ecology. I
-            cared about human systems and the natural world, but I also felt the limits of simply
-            describing environmental decline. I wanted to work in a field where discovery could
-            become intervention, so I moved into biology and began asking how research could
-            contribute to medicine.
-          </p>
-          <p>
-            Since then, each transition has made my work more interdisciplinary: neuroscience and
-            wet-lab training, health informatics during the COVID era, data science and AI, deep
-            learning in genomics, and now a Ph.D. project that is half experimental and half
-            computational. I keep moving toward the same long-term question: how can biological data
-            become mechanisms that improve health?
-          </p>
-        </div>
-        <div class="research-grid compact">
-          <article class="research-panel active" data-topic="clip">
-            <span class="panel-kicker">Current focus</span>
-            <h3>RNA biology and AGO2 eCLIP</h3>
-            <p>
-              Building human miRNA-mRNA interaction resources and CLIP-seq workflows on SGE/HPC.
-            </p>
-          </article>
-          <article class="research-panel" data-topic="genetics">
-            <span class="panel-kicker">Computational growth</span>
-            <h3>Statistics, coding and AI</h3>
-            <p>
-              Applying Python, R, machine learning and statistical genetics to biological questions.
-            </p>
-          </article>
-          <article class="research-panel" data-topic="ml">
-            <span class="panel-kicker">Career direction</span>
-            <h3>Translational bioinformatics</h3>
-            <p>
-              Preparing for roles that connect molecular biology, large-scale data and drug discovery.
-            </p>
-          </article>
-        </div>
-        <div class="topic-controls" aria-label="Research topic controls">
-          <button class="topic-button active" type="button" data-topic="clip">Current work</button>
-          <button class="topic-button" type="button" data-topic="genetics">Data skills</button>
-          <button class="topic-button" type="button" data-topic="ml">Future path</button>
-        </div>
-        <figure class="photo">
-          <img src="assets/lab-mirna.jpg" alt="Xia Wu at her lab desk with screens showing the human miRNA interactome" />
-          <figcaption>At the bench: exploring the human miRNA interactome.</figcaption>
-        </figure>
+      <section class="section" id="journey">
+        <div class="section-heading"><p class="eyebrow">Journey</p><h2>The places that shaped my work.</h2><p>California → New York → Iowa. My Cornell studies and Rockefeller research happened together.</p></div>
+        <ol class="school-grid"><li><div class="school-copy"><span class="school-number">01</span><h3>UC Irvine</h3><p class="school-degree">B.S. Biological Sciences · 2021</p><p>Biology, neuroscience, and my first research projects in the Seiler Lab.</p><a class="text-link" href="#story-uci">Read this chapter <span aria-hidden="true">↗</span></a></div><figure class="school-photo school-photo--uci">
+              <a class="photo-link" href="assets/uci-grad-gross.jpg" target="_blank" rel="noopener" aria-label="Open full photo: Xia Wu at Sue and Bill Gross Hall, UC Irvine"><img src="assets/uci-grad-gross.jpg" alt="Xia Wu at Sue and Bill Gross Hall, UC Irvine" width="1206" height="818" loading="lazy" decoding="async" /></a>
+              <figcaption>Graduation at UC Irvine, 2021.</figcaption>
+            </figure></li>
+<li><div class="school-copy"><span class="school-number">02</span><h3>Weill Cornell Medicine</h3><p class="school-degree">M.S. Health Informatics · 2023</p><p>Programming, statistics, and the use of data in healthcare.</p><a class="text-link" href="#story-new-york">Read this chapter <span aria-hidden="true">↗</span></a></div><figure class="school-photo school-photo--cornell">
+              <a class="photo-link" href="assets/cornell-grad-ceremony.jpg" target="_blank" rel="noopener" aria-label="Open full photo: Xia Wu at the Weill Cornell Medicine commencement"><img src="assets/cornell-grad-ceremony.jpg" alt="Xia Wu at the Weill Cornell Medicine commencement" width="348" height="604" loading="lazy" decoding="async" /></a>
+              <figcaption>Master’s commencement, 2023.</figcaption>
+            </figure></li>
+<li><div class="school-copy"><span class="school-number">03</span><h3>Rockefeller University</h3><p class="school-degree">Research assistant · during my master’s</p><p>Computational genetics and deep learning in the Zhao lab, alongside my Cornell degree.</p><a class="text-link" href="#story-new-york">Read this chapter <span aria-hidden="true">↗</span></a></div><figure class="school-photo school-photo--rockefeller">
+              <a class="photo-link" href="assets/cornell-grad-rockefeller.jpg" target="_blank" rel="noopener" aria-label="Open full photo: Xia Wu in her Cornell graduation gown outside Rockefeller University"><img src="assets/cornell-grad-rockefeller.jpg" alt="Xia Wu in her Cornell graduation gown outside Rockefeller University" width="1206" height="904" loading="lazy" decoding="async" /></a>
+              <figcaption>Cornell graduation day, outside Rockefeller.</figcaption>
+            </figure></li>
+<li><div class="school-copy"><span class="school-number">04</span><h3>University of Iowa</h3><p class="school-degree">Ph.D. Candidate · Molecular Medicine</p><p>Bringing experimental RNA biology and bioinformatics together in the Boudreau lab.</p><a class="text-link" href="#story-iowa">Read this chapter <span aria-hidden="true">↗</span></a></div><figure class="school-photo school-photo--iowa">
+              <a class="photo-link" href="assets/white-coat.jpg" target="_blank" rel="noopener" aria-label="Open full photo: Xia Wu at the University of Iowa Laboratory Coat Ceremony"><img src="assets/white-coat.jpg" alt="Xia Wu at the University of Iowa Laboratory Coat Ceremony" width="1206" height="1608" loading="lazy" decoding="async" /></a>
+              <figcaption>Laboratory Coat Ceremony, August 2024.</figcaption>
+            </figure></li></ol>
+        <p class="photo-hint">Select any photo to see the full image.</p>
       </section>
-
-      <section class="section timeline-section" id="journey">
-        <div class="section-heading">
-          <p class="eyebrow">Journey</p>
-          <h2>My path has changed fields, but not purpose</h2>
-        </div>
-        <ol class="timeline">
-          <li>
-            <time>Before college</time>
-            <h3>Humanities first</h3>
-            <p>
-              I was strongest in history, geography, literature and writing. That background still
-              helps me communicate science and see research questions in a broader social context.
-            </p>
-          </li>
-          <li>
-            <time>UC Irvine</time>
-            <h3>From sociology and ecology to biology</h3>
-            <p>
-              I began with sociology and ecology, then moved into biological sciences because I wanted
-              to contribute to medicine through a field that changes quickly and creates new tools.
-            </p>
-          </li>
-          <li>
-            <time>Wet lab</time>
-            <h3>Neuroscience and experimental training</h3>
-            <p>
-              In retinal and neuroscience research, I learned experimental discipline, model systems
-              and the reality of turning biological questions into measurable evidence.
-            </p>
-          </li>
-          <li>
-            <time>Master's and Ph.D.</time>
-            <h3>Health informatics to molecular bioinformatics</h3>
-            <p>
-              Statistics, COVID-era public health, coding and AI pushed me toward health informatics,
-              deep learning genomics and now a 50/50 wet-dry Ph.D. project in RNA biology.
-            </p>
-          </li>
-        </ol>
-        <figure class="photo-grid">
-          <img src="assets/uci-grad-wall.jpg" alt="Xia Wu at her UC Irvine graduation, in front of the University of California, Irvine wall" />
-          <img src="assets/uci-grad-gross.jpg" alt="Xia Wu sitting on the Sue and Bill Gross Hall sign at UC Irvine, Class of 2021" />
-          <img src="assets/uci-grad-stemcell.jpg" alt="Xia Wu at the Sue and Bill Gross Stem Cell Research Center, UC Irvine" />
-          <img src="assets/cornell-grad-rockefeller.jpg" alt="Xia Wu in graduation gown at Weill Cornell Medicine" />
-          <img src="assets/cornell-grad-ceremony.jpg" alt="Xia Wu at the Weill Cornell Medicine Graduate School commencement" />
-          <figcaption>Graduation days — UC Irvine (B.S., 2021) and Weill Cornell Medicine (M.S., 2023).</figcaption>
-        </figure>
-        <figure class="photo">
-          <img src="assets/uiowa-campus.jpg" alt="Aerial view of the University of Iowa Pentacrest" />
-          <figcaption>University of Iowa — home of the PhD.</figcaption>
-        </figure>
-      </section>
-
-      <section class="section" id="story">
-        <div class="section-heading">
-          <p class="eyebrow">About me</p>
-          <h2>My Story</h2>
-        </div>
-        <div class="story-body">
+      <section class="section story-section" id="story">
+        <div class="section-heading"><p class="eyebrow">About me</p><h2>My story</h2><p>A path through fields, cities, and ways of thinking.</p></div>
+        <div class="story-layout">
+          <aside class="story-index"><nav aria-label="Story chapters"><p class="eyebrow">In this story</p><a href="#story-roots"><span>01</span>Humanities first</a>
+<a href="#story-uci"><span>02</span>UC Irvine</a>
+<a href="#story-new-york"><span>03</span>Cornell + Rockefeller</a>
+<a href="#story-iowa"><span>04</span>University of Iowa</a>
+<a href="#story-consulting"><span>05</span>Learning the business</a>
+<a href="#story-community"><span>06</span>International students</a>
+<a href="#story-life"><span>07</span>Beyond the lab</a>
+<a href="#story-next"><span>08</span>What comes next</a></nav></aside>
+          <div class="story-body"><div class="story-opening">
           <p>
             I am a PhD candidate in Molecular Medicine at the University of Iowa, working where
             RNA biology meets bioinformatics. My thesis maps how AGO2, microRNAs, and messenger
@@ -213,7 +109,7 @@
             in a lab become something that changes a patient's life? Every turn I have taken has
             been an attempt to get closer to an answer.
           </p>
-          <h3>Humanities first</h3>
+          </div><article class="story-chapter" id="story-roots"><p class="chapter-label">01 / Humanities first</p><h3>Humanities first</h3>
           <p>
             In China, I studied the humanities. In high school, I was strongest in history and
             geography — I loved them, and I was good at them — because they taught me how to
@@ -226,7 +122,8 @@
             people to care, and turning data into a story that leads to a decision. The humanities
             gave me that before biology gave me anything else.
           </p>
-          <h3>California: the eye lab</h3>
+          </article>
+<article class="story-chapter" id="story-uci"><p class="chapter-label">02 / UC Irvine</p><h3>California: the eye lab</h3>
           <p>
             When I came to the United States for college, I started in sociology and ecology. I
             cared about human systems and the natural world. But I kept running into the same
@@ -260,7 +157,8 @@
             needed more statistics, and stronger data skills. So I added a minor in health
             informatics — and that one decision rerouted my career.
           </p>
-          <h3>New York: health informatics</h3>
+          </article>
+<article class="story-chapter" id="story-new-york"><p class="chapter-label">03 / Cornell + Rockefeller</p><h3>New York: health informatics</h3>
           <p>
             After Irvine I went to Weill Cornell Medicine in New York for a master's in health
             informatics. I learned programming, data management, AI, and health insurance policy
@@ -268,20 +166,29 @@
           </p>
           <h3>Across the street: Rockefeller</h3>
           <p>
-            While I was finishing my master's, I started working across the street at Rockefeller
-            University, in the Zhao lab, on computational genetics and genomics. We used deep
+            During my master's at Weill Cornell Medicine, I also worked as a research assistant
+            in the Zhao lab at Rockefeller University, just across the street. I pursued the
+            degree and the RA role at the same time, studying health informatics while working
+            on computational genetics and genomics. We used deep
             convolutional neural networks to predict where chromatin opens up — which parts of the
             genome are accessible and ready to be read — across three fruit fly species. That work
             became a paper in Genome Biology.
           </p>
           <p>
-            That was the moment the two halves of my training clicked together: the wet lab had
-            taught me how biology is measured; the dry lab taught me how it is read at scale.
+            My experimental training at Irvine and computational work in New York made me want
+            a project where I could use both: design the experiments, analyze the data, and
+            follow the results back to a biological mechanism.
           </p>
-          <h3>Iowa: the heart, at single-molecule resolution</h3>
+          </article>
+<article class="story-chapter" id="story-iowa"><p class="chapter-label">04 / University of Iowa</p><h3>Iowa: bringing wet and dry together</h3>
+<figure class="story-photo">
+              <a class="photo-link" href="assets/lab-mirna.jpg" target="_blank" rel="noopener" aria-label="Open full photo: Xia Wu at her lab desk with the human miRNA interactome on screen"><img src="assets/lab-mirna.jpg" alt="Xia Wu at her lab desk with the human miRNA interactome on screen" width="1206" height="905" loading="lazy" decoding="async" /></a>
+              <figcaption>My thesis work in the Boudreau lab: experiments, analysis, and a resource to share.</figcaption>
+            </figure>
           <p>
-            Now, at the University of Iowa, I work in the Boudreau lab on a project that is half
-            experimental and half computational — half wet, half dry. My thesis uses eCLIP
+            That desire to bring my training together led me to a PhD in Molecular Medicine at
+            the University of Iowa. In the Boudreau lab, I now combine wet-lab experiments
+            and computational analysis in the same project, with roughly half my work in each. My thesis uses eCLIP
             sequencing to draw a map of AGO2–miRNA–mRNA interactions in human heart tissue, and to
             ask which of those interactions carry genetic risk for atrial fibrillation. It is
             detailed, technical work — but I think of it as cartography: making a map of a place
@@ -302,11 +209,8 @@
             biomarkers, and the evolution of chromatin accessibility — each one a different way of
             asking the same question: what does the data say, and what should we do about it?
           </p>
-          <figure class="photo photo-narrow">
-            <img src="assets/white-coat.jpg" alt="Xia Wu in a white coat at the Laboratory Coat Ceremony" />
-            <figcaption>White Coat Ceremony, Carver College of Medicine — August 2024.</figcaption>
-          </figure>
-          <h3>The turn toward life sciences consulting</h3>
+          </article>
+<article class="story-chapter" id="story-consulting"><p class="chapter-label">05 / Learning the business</p><h3>The turn toward life sciences consulting</h3>
           <p>
             Iowa also gave me something I did not expect: serious training in translational
             medicine — how science moves from the bench to the bedside. And that raised a new
@@ -333,7 +237,19 @@
             me decisions: how to weigh trade-offs, how to see a whole market instead of a single
             molecule, and how to turn an analysis into an action.
           </p>
-          <h3>Service and leadership</h3>
+          </article>
+<article class="story-chapter" id="story-community"><p class="chapter-label">06 / International students</p><h3>Speaking up for international students</h3>
+<figure class="story-photo">
+              <a class="photo-link" href="assets/ams-workshop.jpg" target="_blank" rel="noopener" aria-label="Open full photo: A student workshop at the University of Iowa"><img src="assets/ams-workshop.jpg" alt="A student workshop at the University of Iowa" width="1206" height="905" loading="lazy" decoding="async" /></a>
+              <figcaption>Making room for conversation and community at Iowa.</figcaption>
+            </figure>
+          <p>
+            Supporting international students is a personal commitment. I speak up for our
+            rights and the everyday issues that shape our lives, and I like being someone
+            people can turn to. Many students have contacted me through social media before
+            even arriving on campus. I share what I have learned, answer questions about
+            student life, and help them find resources and a sense of community.
+          </p>
           <p>
             I have always liked building things for other students. At UC Irvine I served on the
             executive board of the BioSci International Student Association, running its social
@@ -350,7 +266,8 @@
             work: science is not only about discoveries, it is about the people doing the
             discovering — and they deserve support.
           </p>
-          <h3>Looking back, the dots connect</h3>
+          </article>
+<article class="story-chapter" id="story-life"><p class="chapter-label">07 / Beyond the lab</p><h3>Looking back, the dots connect</h3>
           <p>
             A bioinformatician I admire, Tommy Tang, taught himself programming in the fourth year
             of his PhD, when a spreadsheet could not open his data. He quotes a line I have kept:
@@ -365,6 +282,10 @@
             mechanism, and medicine — and now, the business of getting medicine to patients.
           </p>
           <h3>Beyond the lab</h3>
+<figure class="story-photo">
+              <a class="photo-link" href="assets/dance-dunes.jpg" target="_blank" rel="noopener" aria-label="Open full photo: A dancer silhouetted on sand dunes"><img src="assets/dance-dunes.jpg" alt="A dancer silhouetted on sand dunes" width="1206" height="804" loading="lazy" decoding="async" /></a>
+              <figcaption>A little movement, a little room to explore.</figcaption>
+            </figure>
           <p>
             Outside the lab, I am usually at a theatre, or on the road. I have seen at least a
             hundred live shows — musicals, plays, opera — and I still get excited every time the
@@ -373,14 +294,15 @@
             and the road are what refill me.
           </p>
           <p>
+            I am also learning French and Spanish. I enjoy the small, everyday challenge of
+            finding another way to express an idea and connect with people.
+          </p>
+          <p>
             I also work out — I have lost about 20 kilograms since I started my PhD — and I
             share my home with a cat.
           </p>
-          <figure class="photo">
-            <img src="assets/dance-dunes.jpg" alt="Silhouette of a dancer on sand dunes" />
-            <figcaption>Beyond the lab.</figcaption>
-          </figure>
-          <h3>What I am looking for</h3>
+          </article>
+<article class="story-chapter" id="story-next"><p class="chapter-label">08 / What comes next</p><h3>What I am looking for</h3>
           <p>
             Right now I am doing three things at once: pushing my PhD research forward, building
             up business knowledge, and laying the groundwork for turning science into business. I
@@ -393,39 +315,43 @@
           <p>
             Everything on this page started the same way: with curiosity. I follow the question,
             and the question keeps moving.
-          </p>
+          </p></article></div>
         </div>
       </section>
-
       <section class="section work-section" id="skills">
-        <div class="section-heading">
-          <p class="eyebrow">Skills</p>
-          <h2>What I bring to a team</h2>
-        </div>
+        <div class="section-heading"><p class="eyebrow">Skills</p><h2>What I do, and what I’m learning.</h2><p>Practical methods, research experience, and the work I do with people.</p></div>
         <div class="work-grid">
-          <article>
-            <h3>Wet-lab literacy</h3>
-            <p>Neuroscience, retinal models, imaging, electrophysiology, IHC/IFA, Western blotting and experimental troubleshooting.</p>
-          </article>
-          <article>
-            <h3>Bioinformatics</h3>
-            <p>CLIP-seq, RNA-seq, scRNA-seq, ATAC-seq, small RNA analysis, pipeline design and SGE/HPC workflows.</p>
-          </article>
-          <article>
-            <h3>Data science and AI</h3>
-            <p>Python, R, machine learning, deep learning, statistical modeling, health informatics and clinical data thinking.</p>
-          </article>
-          <article>
-            <h3>Leadership and communication</h3>
-            <p>Teaching, mentoring, peer review, student organization leadership and cross-cultural scientific communication.</p>
-          </article>
-        </div>
-        <figure class="photo">
-          <img src="assets/ams-workshop.jpg" alt="A workshop with fellow students at the University of Iowa" />
-          <figcaption>With fellow students at a University of Iowa workshop.</figcaption>
-        </figure>
+<article><span class="skill-number">01 / EXPERIMENTS</span><h3>Experimental biology</h3><ul>
+<li><strong>RNA biology:</strong> human tissue preparation, AGO2 eCLIP, and miRNA–mRNA interactions.</li>
+<li><strong>Retinal research:</strong> retinal organoid studies, electroretinography, OCT, and behavioral assays.</li>
+<li><strong>Lab methods:</strong> immunohistochemistry / immunofluorescence, Western blotting, imaging, and troubleshooting.</li>
+</ul></article>
+<article><span class="skill-number">02 / SEQUENCING</span><h3>Bioinformatics &amp; genomics</h3><ul>
+<li><strong>Sequencing analysis:</strong> CLIP-seq, RNA-seq, scRNA-seq, ATAC-seq, and small RNA.</li>
+<li><strong>Biological interpretation:</strong> functional genomics, variant analysis, and links to clinical phenotypes.</li>
+<li><strong>Across projects:</strong> pan-cancer multi-omics, metabolomics biomarkers, and chromatin accessibility.</li>
+</ul></article>
+<article><span class="skill-number">03 / COMPUTATION</span><h3>Programming &amp; data science</h3><ul>
+<li><strong>Analysis:</strong> Python, R, statistical modeling, and data visualization.</li>
+<li><strong>Machine learning:</strong> predictive modeling and deep convolutional neural networks for genomics.</li>
+<li><strong>Research infrastructure:</strong> analysis pipelines, SGE/HPC workflows, and web resources for sharing data.</li>
+</ul></article>
+<article><span class="skill-number">04 / HEALTHCARE</span><h3>Health informatics &amp; translation</h3><ul>
+<li><strong>Health data:</strong> data management, clinical evidence, and healthcare policy research.</li>
+<li><strong>Translational research:</strong> connecting molecular findings to disease mechanisms and therapeutic questions.</li>
+<li><strong>Currently building:</strong> life sciences business knowledge, case analysis, and consulting problem-solving.</li>
+</ul></article>
+<article><span class="skill-number">05 / PEOPLE</span><h3>Leadership &amp; advocacy</h3><ul>
+<li><strong>Student leadership:</strong> AMS president; International Student Advisory Board communication director.</li>
+<li><strong>Community work:</strong> international student rights, pre-arrival support, events, and social media outreach.</li>
+<li><strong>Science communication:</strong> teaching, mentoring, peer review, and cross-cultural collaboration.</li>
+</ul></article>
+<article><span class="skill-number">06 / COMMUNICATION</span><h3>Languages &amp; lifelong learning</h3><ul>
+<li><strong>Chinese &amp; English:</strong> connecting across the communities where I have studied and worked.</li>
+<li><strong>Learning French &amp; Spanish:</strong> ongoing language study.</li>
+<li><strong>Humanities foundation:</strong> writing, presenting, and making complex ideas understandable.</li>
+</ul></article></div>
       </section>
-
       <section class="section publications">
         <div class="section-heading">
           <p class="eyebrow">Selected Evidence</p>
@@ -446,31 +372,13 @@
           </article>
         </div>
       </section>
-
       <section class="section future-section" id="goal">
-        <div class="future-copy">
-          <p class="eyebrow">Future Goal</p>
-          <h2>Becoming a bridge between molecular biology and bioinformatics</h2>
-          <p>
-            I hope to work in biotech or pharma as a scientist who understands both biological
-            mechanisms and computational evidence. I want to help teams move from large-scale data
-            to clearer hypotheses, stronger experiments and better therapeutic decisions.
-          </p>
-        </div>
-        <div class="future-orbit" aria-label="Future goals">
-          <button type="button" data-goal="biology">Mechanism</button>
-          <button type="button" data-goal="data">Data</button>
-          <button type="button" data-goal="medicine">Medicine</button>
-          <p id="goal-note">Hover or tap a word to see how I connect it.</p>
-        </div>
+        <p class="eyebrow">What comes next</p><h2>Connecting computation, mechanism, and medicine.</h2>
+        <p>I hope to work in biotech or pharma as a scientist who understands both biological mechanisms and computational evidence. I want to help teams turn data into clearer hypotheses, stronger experiments, and better therapeutic decisions.</p>
+        <a class="button primary" href="mailto:xwu76@uiowa.edu">Let’s connect <span aria-hidden="true">↗</span></a>
       </section>
     </main>
-
-    <footer>
-      <p>© <span id="year"></span> Xia Wu · Built for GitHub Pages</p>
-      <a href="#home">Back to top</a>
-    </footer>
-
-    <script src="app.js"></script>
+    <footer><p>© <span id="year">2026</span> Xia Wu</p><a href="#home">Back to top ↑</a></footer>
+    <script src="app.js?v=20261028" defer></script>
   </body>
 </html>

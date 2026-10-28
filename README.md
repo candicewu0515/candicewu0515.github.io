@@ -1,18 +1,10 @@
 # Xia Wu Academic Website
 
-This is a static personal academic website designed for GitHub Pages.
+A static personal website published with GitHub Pages from `main` and the repository root.
 
-## Files
+- `index.html`: biography, chronological school gallery, chapter links, skills, and research output.
+- `styles.css`: responsive layouts, bounded photos, reading column, and light/dark themes.
+- `app.js`: optional theme preference and footer year. Content does not depend on JavaScript, scroll animations, or remote fonts.
+- `assets/`: original photographs. Gallery photographs use individual focal positions to keep the person visible, with links to the full originals; story images retain their natural proportions. Images below the hero load lazily and reserve their dimensions.
 
-- `index.html` contains the page content.
-- `styles.css` contains responsive design and visual styling.
-- `app.js` contains the interactive RNA background, topic switcher, reveal animation and theme toggle.
-- `assets/xia-wu-portrait.jpg` is the optimized portrait image used by the site.
-
-## Publish on GitHub Pages
-
-1. Create a GitHub repository named `candicewu0515.github.io` for a user site, or any repository name for a project site.
-2. Upload these files to the repository root.
-3. In GitHub, open Settings → Pages.
-4. Choose deployment from the main branch and root folder.
-5. Your site will publish at `https://candicewu0515.github.io/` for a user site.
+To preview, serve this directory with a static HTTP server. Check desktop, tablet, and mobile widths, direct chapter links, keyboard focus, and the page with JavaScript disabled. No build step is required.
