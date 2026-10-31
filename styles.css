@@ -130,17 +130,26 @@ main, footer { width: min(1180px, calc(100% - 64px)); margin-inline: auto; }
 .work-grid ul { list-style: none; padding: 0; margin: 16px 0 0; }
 .work-grid li { margin-top: 14px; padding-top: 14px; border-top: 1px solid var(--line); color: var(--muted); font-size: .88rem; line-height: 1.65; }
 .work-grid strong { color: var(--ink); font-weight: 650; }
-.publications { max-width: 780px; margin-inline: auto; padding-block: 40px; }
 .publications .section-heading { margin-bottom: 20px; }
-.publications h2 { font-size: clamp(1.7rem, 2.4vw, 2.15rem); }
-.publication-list { display: grid; }
+.publication-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 32px; }
 .publication-list article { padding: 16px 0; border-top: 1px solid var(--line); }
-.publication-list h3, .forthcoming-publication h3 { font-size: .96rem; line-height: 1.5; }
+.publication-list h3, .forthcoming-publication h3 { font-size: 1.02rem; line-height: 1.5; }
 .publication-list h3 a:hover { color: var(--teal); text-decoration: underline; text-underline-offset: 3px; }
 .publication-list p, .forthcoming-publication > p:last-child { color: var(--muted); font-size: .8rem; margin: 6px 0 0; }
 .publication-doi { display: inline-block; margin-top: 4px; color: var(--teal); font-size: .76rem; overflow-wrap: anywhere; text-decoration: underline; text-underline-offset: 3px; }
 .forthcoming-publication { margin-top: 14px; padding: 16px 18px; background: var(--paper); border-left: 3px solid var(--amber); }
 .publication-status { margin: 0 0 8px; color: var(--amber); font-size: .68rem; font-weight: 750; letter-spacing: .05em; text-transform: uppercase; }
+.code-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; }
+.code-grid article { display: flex; flex-direction: column; padding: 22px 24px; border: 1px solid var(--line); border-top: 4px solid var(--teal); border-radius: 5px; background: var(--bg); }
+.code-grid article:nth-child(3n + 2) { border-top-color: var(--blue); }
+.code-grid article:nth-child(3n) { border-top-color: var(--berry); }
+.code-meta { margin: 0 0 10px; color: var(--muted); font-size: .7rem; font-weight: 750; letter-spacing: .07em; text-transform: uppercase; }
+.code-grid h3 { font-size: 1.05rem; overflow-wrap: anywhere; }
+.code-grid h3 a:hover { color: var(--teal); text-decoration: underline; text-underline-offset: 3px; }
+.code-grid article > p:not(.code-meta) { flex: 1; margin: 10px 0 14px; color: var(--muted); font-size: .88rem; line-height: 1.65; }
+.code-links { display: flex; flex-wrap: wrap; gap: 6px 18px; }
+.code-links a { color: var(--teal); font-size: .8rem; font-weight: 750; text-decoration: underline; text-underline-offset: 4px; }
+.code-all { margin-top: 22px; }
 .future-section { padding: 40px; margin-block: 48px; border: 0; border-left: 6px solid var(--teal); background: var(--paper); border-radius: 4px; }
 .future-section h2 { max-width: 760px; }
 .future-section > p:not(.eyebrow) { max-width: 780px; color: var(--muted); margin-block: 22px; }
@@ -154,7 +163,7 @@ footer a { color: var(--teal); }
   .school-grid li { grid-template-columns: minmax(0, 1fr) 165px; gap: 16px; padding: 20px; }
   .school-photo .photo-link { height: 200px; }
   .story-layout { grid-template-columns: 180px minmax(0, 1fr); gap: 32px; }
-  .work-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .work-grid, .code-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 @media (max-width: 800px) {
   :root { --header-height: 116px; }
@@ -190,7 +199,8 @@ footer a { color: var(--teal); }
   .path-strip b { display: none; }
   .section { padding-block: 44px; }
   .section-heading { margin-bottom: 24px; }
-  .profile-intro, .research-grid, .work-grid { grid-template-columns: 1fr; gap: 12px; }
+  .profile-intro, .research-grid, .work-grid, .code-grid { grid-template-columns: 1fr; gap: 12px; }
+  .publication-list { grid-template-columns: 1fr; }
   .research-grid { gap: 22px; margin-top: 16px; }
   .school-grid li { grid-template-columns: 1fr; gap: 20px; padding: 20px; }
   .school-photo .photo-link { height: 260px; max-width: 320px; margin-inline: auto; }
@@ -212,7 +222,6 @@ footer a { color: var(--teal); }
 html:lang(zh) body { font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Segoe UI", sans-serif; line-height: 1.85; }
 html:lang(zh) h2, html:lang(zh) .story-body h3 { font-family: "PingFang SC", "Microsoft YaHei", sans-serif; font-weight: 700; letter-spacing: 0; line-height: 1.45; }
 html:lang(zh) h2 { font-size: clamp(1.75rem, 2.6vw, 2.65rem); }
-html:lang(zh) .publications h2 { font-size: clamp(1.65rem, 2.2vw, 2.1rem); }
 html:lang(zh) .eyebrow, html:lang(zh) .chapter-label, html:lang(zh) .skill-number { letter-spacing: .06em; }
 html:lang(zh) .story-body { max-width: 760px; }
 html:lang(zh) .hero-lede { line-height: 1.9; }

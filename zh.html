@@ -11,7 +11,7 @@
     <link rel="alternate" hreflang="zh-CN" href="https://candicewu0515.github.io/zh.html" />
     <link rel="alternate" hreflang="x-default" href="https://candicewu0515.github.io/" />
     <script src="language.js?v=20261028-lang"></script>
-    <link rel="stylesheet" href="styles.css?v=20261028-lang" />
+    <link rel="stylesheet" href="styles.css?v=20261030-order" />
   </head>
   <body>
     <canvas id="dna-field" aria-hidden="true"></canvas>
@@ -22,11 +22,12 @@
         <span>Xia Wu</span>
       </a>
       <nav aria-label="主导航">
+        <a href="#publications">论文</a>
+        <a href="#github">GitHub</a>
+        <a href="#skills">能力</a>
         <a href="#profile">简介</a>
         <a href="#journey">经历</a>
         <a href="#story">我的故事</a>
-        <a href="#skills">能力</a>
-        <a href="#goal">未来方向</a>
       </nav>
       <div class="header-controls">
         <div class="language-switch" role="group" aria-label="Language / 语言">
@@ -62,6 +63,74 @@
         </figure>
       </section>
       <div class="path-strip" aria-label="我的学习与研究路径"><span>人文学科</span><b aria-hidden="true">→</b><span>实验生物学</span><b aria-hidden="true">→</b><span>计算分析</span><b aria-hidden="true">→</b><span>转化生物信息学</span></div>
+      <section class="section publications" id="publications" aria-labelledby="publications-heading">
+        <div class="section-heading">
+          <p class="eyebrow">部分研究成果</p>
+          <h2 id="publications-heading">论文发表</h2>
+        </div>
+        <div class="publication-list">
+          <article>
+            <h3><a href="https://doi.org/10.1186/s13059-023-03079-5" target="_blank" rel="noopener">果蝇染色质可及性的进化与突变稳健性</a></h3>
+            <p>Genome Biology · 2023 年 · 共同作者</p>
+            <a class="publication-doi" href="https://doi.org/10.1186/s13059-023-03079-5" target="_blank" rel="noopener">DOI: 10.1186/s13059-023-03079-5 ↗</a>
+          </article>
+          <article>
+            <h3><a href="https://doi.org/10.1145/3778067.3778071" target="_blank" rel="noopener">利用代谢组学数据发现阿尔茨海默病的潜在生物标志物</a></h3>
+            <p>ICBBS 2025 · ACM · 2026 年 1 月在线发表</p>
+            <a class="publication-doi" href="https://doi.org/10.1145/3778067.3778071" target="_blank" rel="noopener">DOI: 10.1145/3778067.3778071 ↗</a>
+          </article>
+        </div>
+        <div class="forthcoming-publication">
+          <p class="publication-status">会议论文 · 待出版</p>
+          <h3>Medicare Advantage 参保人数增长与专业护理机构入住率</h3>
+          <p>ICHSM 2026 · 已获 IOS Conference Proceedings 接收</p>
+        </div>
+      </section>
+      <section class="section code-section" id="github" aria-labelledby="github-heading">
+        <div class="section-heading"><p class="eyebrow">GitHub</p><h2 id="github-heading">代码、分析流程与数据资源</h2><p>可重复的分析与工具：从博士课题数据库，到多组学分析流程。</p></div>
+        <div class="code-grid">
+<article><p class="code-meta">博士课题 · 网站</p><h3><a href="https://mir-engagemint.io/" target="_blank" rel="noopener">miR-engageMINT</a></h3><p>基于人类 eCLIP 的 AGO2 相关 miRNA 结合位点检索平台。我负责 HPC 分析流程、注释质控、网页界面开发以及 AWS 部署。</p><div class="code-links"><a href="https://mir-engagemint.io/" target="_blank" rel="noopener">网站 <span aria-hidden="true">↗</span></a><a href="https://github.com/candicewu0515/miR-engageMINT" target="_blank" rel="noopener">项目概览 <span aria-hidden="true">↗</span></a></div></article>
+<article><p class="code-meta">Python + R · 多组学</p><h3><a href="https://github.com/candicewu0515/PHLDA3-THCA" target="_blank" rel="noopener">PHLDA3-THCA</a></h3><p>整合多队列与单细胞数据，分析 PHLDA3 在甲状腺癌中的作用，包含可重复的代码、图表与论文稿。</p><div class="code-links"><a href="https://github.com/candicewu0515/PHLDA3-THCA" target="_blank" rel="noopener">代码库 <span aria-hidden="true">↗</span></a></div></article>
+<article><p class="code-meta">R · 转录组</p><h3><a href="https://github.com/candicewu0515/HF-muscle-ageing-signature" target="_blank" rel="noopener">HF-muscle-ageing-signature</a></h3><p>一个假设生成性的分析流程，寻找心力衰竭与骨骼肌衰老之间共享的转录特征，并构建 CLIP 支持的 miRNA/转录因子调控网络。</p><div class="code-links"><a href="https://github.com/candicewu0515/HF-muscle-ageing-signature" target="_blank" rel="noopener">代码库 <span aria-hidden="true">↗</span></a></div></article>
+<article><p class="code-meta">R · 机器学习</p><h3><a href="https://github.com/candicewu0515/crc-lasso-tcga" target="_blank" rel="noopener">crc-lasso-tcga</a></h3><p>基于 TCGA RNA-seq 数据区分结直肠癌与正常结肠组织的 LASSO 基因特征流程；ICBB 2026 论文的配套代码。</p><div class="code-links"><a href="https://github.com/candicewu0515/crc-lasso-tcga" target="_blank" rel="noopener">代码库 <span aria-hidden="true">↗</span></a></div></article>
+<article><p class="code-meta">Python · 黑客松</p><h3><a href="https://github.com/candicewu0515/genedis2026-ra-multiomics" target="_blank" rel="noopener">genedis2026-ra-multiomics</a></h3><p>为 GeNeDis 2026 完成的类风湿关节炎多组学整合分析，涵盖遗传学、单细胞核 RNA/ATAC、空间转录组、bulk 转录组与蛋白组数据。</p><div class="code-links"><a href="https://github.com/candicewu0515/genedis2026-ra-multiomics" target="_blank" rel="noopener">代码库 <span aria-hidden="true">↗</span></a></div></article>
+<article><p class="code-meta">Python · 教学</p><h3><a href="https://candicewu0515.github.io/protein-design-local-teaching/" target="_blank" rel="noopener">protein-design-local-teaching</a></h3><p>以 GB1 为例、以功能约束为核心的蛋白质设计教学模块，包含 ProteinMPNN 与 ESMFold 结果、验证数据和教师材料。</p><div class="code-links"><a href="https://candicewu0515.github.io/protein-design-local-teaching/" target="_blank" rel="noopener">文档 <span aria-hidden="true">↗</span></a><a href="https://github.com/candicewu0515/protein-design-local-teaching" target="_blank" rel="noopener">代码库 <span aria-hidden="true">↗</span></a></div></article></div>
+        <a class="text-link code-all" href="https://github.com/candicewu0515" target="_blank" rel="noopener">在 GitHub 查看全部项目 <span aria-hidden="true">↗</span></a>
+      </section>
+      <section class="section work-section" id="skills">
+        <div class="section-heading"><p class="eyebrow">能力</p><h2>我能做什么，还在学什么</h2><p>从具体的实验和分析方法，到与人合作、沟通和组织活动。</p></div>
+        <div class="work-grid">
+<article><span class="skill-number">01 / 实验研究</span><h3>实验生物学</h3><ul>
+<li><strong>RNA 生物学：</strong> 人体组织样本处理、AGO2 eCLIP，以及 miRNA–mRNA 相互作用研究。</li>
+<li><strong>视网膜研究：</strong> 视网膜类器官、视网膜电图、OCT 和行为学测试。</li>
+<li><strong>实验方法：</strong> 免疫组织化学与免疫荧光染色、Western blot、成像及实验问题排查。</li>
+</ul></article>
+<article><span class="skill-number">02 / 测序分析</span><h3>生物信息学与基因组学</h3><ul>
+<li><strong>测序数据：</strong> CLIP-seq、RNA-seq、scRNA-seq、ATAC-seq 和小 RNA 分析。</li>
+<li><strong>结果解释：</strong> 功能基因组学、遗传变异分析，以及与临床表型的关联研究。</li>
+<li><strong>项目经验：</strong> 泛癌多组学、代谢组学生物标志物和染色质可及性研究。</li>
+</ul></article>
+<article><span class="skill-number">03 / 编程与计算</span><h3>编程与数据科学</h3><ul>
+<li><strong>数据分析：</strong> Python、R、统计建模与数据可视化。</li>
+<li><strong>机器学习：</strong> 预测建模，以及深度卷积神经网络在基因组学中的应用。</li>
+<li><strong>分析工具与流程：</strong> 分析流程搭建、SGE/HPC 高性能计算工作流，以及用于共享数据的网站资源。</li>
+</ul></article>
+<article><span class="skill-number">04 / 医疗与转化</span><h3>健康信息学与转化研究</h3><ul>
+<li><strong>医疗数据：</strong> 数据管理、临床证据与医疗政策研究。</li>
+<li><strong>转化研究：</strong> 将分子层面的发现与疾病机制、潜在治疗方向联系起来。</li>
+<li><strong>正在学习：</strong> 生命科学商业知识、案例分析和咨询中的问题分析方法。</li>
+</ul></article>
+<article><span class="skill-number">05 / 组织与倡议</span><h3>学生组织与权益倡议</h3><ul>
+<li><strong>组织经历：</strong> AMS 主席、国际学生咨询委员会（ISAB）传播负责人。</li>
+<li><strong>学生支持：</strong> 国际学生权益倡议、入学前答疑、活动组织与社交媒体交流。</li>
+<li><strong>科研沟通：</strong> 教学、学生指导、同行评审与跨文化合作。</li>
+</ul></article>
+<article><span class="skill-number">06 / 语言与表达</span><h3>语言与持续学习</h3><ul>
+<li><strong>中文与英文：</strong> 在学习、工作和日常生活中与不同文化背景的人交流。</li>
+<li><strong>法语与西班牙语：</strong> 正在持续学习中。</li>
+<li><strong>人文学科基础：</strong> 写作、演讲，以及把复杂问题解释清楚。</li>
+</ul></article></div>
+      </section>
       <section class="section" id="profile">
         <div class="section-heading"><p class="eyebrow">简介</p><h2>研究生物与数据，也关心身边的人</h2></div>
         <div class="profile-intro"><p>我目前是爱荷华大学分子医学专业的博士候选人，在 Boudreau 实验室研究人体组织中 AGO2、微小 RNA（miRNA）与信使 RNA（mRNA）的相互作用，重点关注心房颤动。</p><p>从人文学科到神经科学，再到健康信息学，我的研究方向几经变化，但始终围绕着同一个问题：怎样利用生物学数据理解疾病，并推动医学进步？</p></div>
@@ -220,64 +289,6 @@
           </p></article></div>
         </div>
       </section>
-      <section class="section work-section" id="skills">
-        <div class="section-heading"><p class="eyebrow">能力</p><h2>我能做什么，还在学什么</h2><p>从具体的实验和分析方法，到与人合作、沟通和组织活动。</p></div>
-        <div class="work-grid">
-<article><span class="skill-number">01 / 实验研究</span><h3>实验生物学</h3><ul>
-<li><strong>RNA 生物学：</strong> 人体组织样本处理、AGO2 eCLIP，以及 miRNA–mRNA 相互作用研究。</li>
-<li><strong>视网膜研究：</strong> 视网膜类器官、视网膜电图、OCT 和行为学测试。</li>
-<li><strong>实验方法：</strong> 免疫组织化学与免疫荧光染色、Western blot、成像及实验问题排查。</li>
-</ul></article>
-<article><span class="skill-number">02 / 测序分析</span><h3>生物信息学与基因组学</h3><ul>
-<li><strong>测序数据：</strong> CLIP-seq、RNA-seq、scRNA-seq、ATAC-seq 和小 RNA 分析。</li>
-<li><strong>结果解释：</strong> 功能基因组学、遗传变异分析，以及与临床表型的关联研究。</li>
-<li><strong>项目经验：</strong> 泛癌多组学、代谢组学生物标志物和染色质可及性研究。</li>
-</ul></article>
-<article><span class="skill-number">03 / 编程与计算</span><h3>编程与数据科学</h3><ul>
-<li><strong>数据分析：</strong> Python、R、统计建模与数据可视化。</li>
-<li><strong>机器学习：</strong> 预测建模，以及深度卷积神经网络在基因组学中的应用。</li>
-<li><strong>分析工具与流程：</strong> 分析流程搭建、SGE/HPC 高性能计算工作流，以及用于共享数据的网站资源。</li>
-</ul></article>
-<article><span class="skill-number">04 / 医疗与转化</span><h3>健康信息学与转化研究</h3><ul>
-<li><strong>医疗数据：</strong> 数据管理、临床证据与医疗政策研究。</li>
-<li><strong>转化研究：</strong> 将分子层面的发现与疾病机制、潜在治疗方向联系起来。</li>
-<li><strong>正在学习：</strong> 生命科学商业知识、案例分析和咨询中的问题分析方法。</li>
-</ul></article>
-<article><span class="skill-number">05 / 组织与倡议</span><h3>学生组织与权益倡议</h3><ul>
-<li><strong>组织经历：</strong> AMS 主席、国际学生咨询委员会（ISAB）传播负责人。</li>
-<li><strong>学生支持：</strong> 国际学生权益倡议、入学前答疑、活动组织与社交媒体交流。</li>
-<li><strong>科研沟通：</strong> 教学、学生指导、同行评审与跨文化合作。</li>
-</ul></article>
-<article><span class="skill-number">06 / 语言与表达</span><h3>语言与持续学习</h3><ul>
-<li><strong>中文与英文：</strong> 在学习、工作和日常生活中与不同文化背景的人交流。</li>
-<li><strong>法语与西班牙语：</strong> 正在持续学习中。</li>
-<li><strong>人文学科基础：</strong> 写作、演讲，以及把复杂问题解释清楚。</li>
-</ul></article></div>
-      </section>
-      <section class="section publications" id="publications" aria-labelledby="publications-heading">
-        <div class="section-heading">
-          <p class="eyebrow">部分研究成果</p>
-          <h2 id="publications-heading">论文发表</h2>
-        </div>
-        <div class="publication-list">
-          <article>
-            <h3><a href="https://doi.org/10.1186/s13059-023-03079-5" target="_blank" rel="noopener">果蝇染色质可及性的进化与突变稳健性</a></h3>
-            <p>Genome Biology · 2023 年 · 共同作者</p>
-            <a class="publication-doi" href="https://doi.org/10.1186/s13059-023-03079-5" target="_blank" rel="noopener">DOI: 10.1186/s13059-023-03079-5 ↗</a>
-          </article>
-          <article>
-            <h3><a href="https://doi.org/10.1145/3778067.3778071" target="_blank" rel="noopener">利用代谢组学数据发现阿尔茨海默病的潜在生物标志物</a></h3>
-            <p>ICBBS 2025 · ACM · 2026 年 1 月在线发表</p>
-            <a class="publication-doi" href="https://doi.org/10.1145/3778067.3778071" target="_blank" rel="noopener">DOI: 10.1145/3778067.3778071 ↗</a>
-          </article>
-        </div>
-        <div class="forthcoming-publication">
-          <p class="publication-status">会议论文 · 待出版</p>
-          <h3>Medicare Advantage 参保人数增长与专业护理机构入住率</h3>
-          <p>ICHSM 2026 · 已获 IOS Conference Proceedings 接收</p>
-        </div>
-      </section>
-
       <section class="section future-section" id="goal">
         <p class="eyebrow">下一步</p><h2>把计算分析、分子机制与转化研究连接起来</h2>
         <p>我希望进入生物技术或制药行业，发挥实验研究和计算分析两方面的积累，帮助团队从数据中提出更清晰的假设，设计更扎实的实验，并为治疗方案的研发提供依据。</p>

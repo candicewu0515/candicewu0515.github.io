@@ -14,7 +14,7 @@
     <link rel="alternate" hreflang="zh-CN" href="https://candicewu0515.github.io/zh.html" />
     <link rel="alternate" hreflang="x-default" href="https://candicewu0515.github.io/" />
     <script src="language.js?v=20261028-lang"></script>
-    <link rel="stylesheet" href="styles.css?v=20261028-lang" />
+    <link rel="stylesheet" href="styles.css?v=20261030-order" />
   </head>
   <body>
     <canvas id="dna-field" aria-hidden="true"></canvas>
@@ -25,11 +25,12 @@
         <span>Xia Wu</span>
       </a>
       <nav aria-label="Primary navigation">
+        <a href="#publications">Papers</a>
+        <a href="#github">GitHub</a>
+        <a href="#skills">Skills</a>
         <a href="#profile">Profile</a>
         <a href="#journey">Journey</a>
-        <a href="#story">My Story</a>
-        <a href="#skills">Skills</a>
-        <a href="#goal">Goal</a>
+        <a href="#story">Story</a>
       </nav>
       <div class="header-controls">
         <div class="language-switch" role="group" aria-label="Language / 语言">
@@ -67,6 +68,74 @@
         </figure>
       </section>
       <div class="path-strip" aria-label="My path"><span>Humanities</span><b aria-hidden="true">→</b><span>Experimental biology</span><b aria-hidden="true">→</b><span>Computation</span><b aria-hidden="true">→</b><span>Translational bioinformatics</span></div>
+      <section class="section publications" id="publications" aria-labelledby="publications-heading">
+        <div class="section-heading">
+          <p class="eyebrow">Selected work</p>
+          <h2 id="publications-heading">Publications</h2>
+        </div>
+        <div class="publication-list">
+          <article>
+            <h3><a href="https://doi.org/10.1186/s13059-023-03079-5" target="_blank" rel="noopener">The Evolution and Mutational Robustness of Chromatin Accessibility in Drosophila</a></h3>
+            <p>Genome Biology · 2023 · Co-author</p>
+            <a class="publication-doi" href="https://doi.org/10.1186/s13059-023-03079-5" target="_blank" rel="noopener">DOI: 10.1186/s13059-023-03079-5 ↗</a>
+          </article>
+          <article>
+            <h3><a href="https://doi.org/10.1145/3778067.3778071" target="_blank" rel="noopener">Discover Potential Biomarker of Alzheimer’s Disease Using Metabolomics Data</a></h3>
+            <p>ICBBS 2025 · ACM · Published online January 2026</p>
+            <a class="publication-doi" href="https://doi.org/10.1145/3778067.3778071" target="_blank" rel="noopener">DOI: 10.1145/3778067.3778071 ↗</a>
+          </article>
+        </div>
+        <div class="forthcoming-publication">
+          <p class="publication-status">Conference paper · publication pending</p>
+          <h3>Growth in Medicare Advantage Enrollment and Skilled Nursing Facility Occupancy</h3>
+          <p>ICHSM 2026 · Accepted for IOS Conference Proceedings</p>
+        </div>
+      </section>
+      <section class="section code-section" id="github" aria-labelledby="github-heading">
+        <div class="section-heading"><p class="eyebrow">GitHub</p><h2 id="github-heading">Code, pipelines, and data resources.</h2><p>Reproducible analyses and tools, from my thesis database to multi-omics pipelines.</p></div>
+        <div class="code-grid">
+<article><p class="code-meta">Thesis resource · Web app</p><h3><a href="https://mir-engagemint.io/" target="_blank" rel="noopener">miR-engageMINT</a></h3><p>A searchable explorer of AGO2-associated miRNA binding sites from human eCLIP. I built the HPC workflows, annotation QC, web interface, and AWS deployment.</p><div class="code-links"><a href="https://mir-engagemint.io/" target="_blank" rel="noopener">Website <span aria-hidden="true">↗</span></a><a href="https://github.com/candicewu0515/miR-engageMINT" target="_blank" rel="noopener">Overview <span aria-hidden="true">↗</span></a></div></article>
+<article><p class="code-meta">Python + R · Multi-omics</p><h3><a href="https://github.com/candicewu0515/PHLDA3-THCA" target="_blank" rel="noopener">PHLDA3-THCA</a></h3><p>Integrated multi-cohort and single-cell analysis of PHLDA3 in thyroid carcinoma, with reproducible code, figures, and manuscript.</p><div class="code-links"><a href="https://github.com/candicewu0515/PHLDA3-THCA" target="_blank" rel="noopener">Repository <span aria-hidden="true">↗</span></a></div></article>
+<article><p class="code-meta">R · Transcriptomics</p><h3><a href="https://github.com/candicewu0515/HF-muscle-ageing-signature" target="_blank" rel="noopener">HF-muscle-ageing-signature</a></h3><p>A hypothesis-generating pipeline mapping a shared transcriptional signature between heart failure and ageing skeletal muscle, with a CLIP-supported miRNA/TF network.</p><div class="code-links"><a href="https://github.com/candicewu0515/HF-muscle-ageing-signature" target="_blank" rel="noopener">Repository <span aria-hidden="true">↗</span></a></div></article>
+<article><p class="code-meta">R · Machine learning</p><h3><a href="https://github.com/candicewu0515/crc-lasso-tcga" target="_blank" rel="noopener">crc-lasso-tcga</a></h3><p>A LASSO gene-signature pipeline that classifies colorectal cancer versus normal colon tissue from TCGA RNA-seq; companion code for an ICBB 2026 paper.</p><div class="code-links"><a href="https://github.com/candicewu0515/crc-lasso-tcga" target="_blank" rel="noopener">Repository <span aria-hidden="true">↗</span></a></div></article>
+<article><p class="code-meta">Python · Hackathon</p><h3><a href="https://github.com/candicewu0515/genedis2026-ra-multiomics" target="_blank" rel="noopener">genedis2026-ra-multiomics</a></h3><p>Rheumatoid arthritis multi-omics integration across genetics, single-nucleus RNA/ATAC, spatial, bulk, and proteomics data for GeNeDis 2026.</p><div class="code-links"><a href="https://github.com/candicewu0515/genedis2026-ra-multiomics" target="_blank" rel="noopener">Repository <span aria-hidden="true">↗</span></a></div></article>
+<article><p class="code-meta">Python · Teaching</p><h3><a href="https://candicewu0515.github.io/protein-design-local-teaching/" target="_blank" rel="noopener">protein-design-local-teaching</a></h3><p>A function-constrained protein-design module built around GB1, with ProteinMPNN and ESMFold results, verified data, and instructor materials.</p><div class="code-links"><a href="https://candicewu0515.github.io/protein-design-local-teaching/" target="_blank" rel="noopener">Docs <span aria-hidden="true">↗</span></a><a href="https://github.com/candicewu0515/protein-design-local-teaching" target="_blank" rel="noopener">Repository <span aria-hidden="true">↗</span></a></div></article></div>
+        <a class="text-link code-all" href="https://github.com/candicewu0515" target="_blank" rel="noopener">See all repositories on GitHub <span aria-hidden="true">↗</span></a>
+      </section>
+      <section class="section work-section" id="skills">
+        <div class="section-heading"><p class="eyebrow">Skills</p><h2>What I do, and what I’m learning.</h2><p>Practical methods, research experience, and the work I do with people.</p></div>
+        <div class="work-grid">
+<article><span class="skill-number">01 / EXPERIMENTS</span><h3>Experimental biology</h3><ul>
+<li><strong>RNA biology:</strong> human tissue preparation, AGO2 eCLIP, and miRNA–mRNA interactions.</li>
+<li><strong>Retinal research:</strong> retinal organoid studies, electroretinography, OCT, and behavioral assays.</li>
+<li><strong>Lab methods:</strong> immunohistochemistry / immunofluorescence, Western blotting, imaging, and troubleshooting.</li>
+</ul></article>
+<article><span class="skill-number">02 / SEQUENCING</span><h3>Bioinformatics &amp; genomics</h3><ul>
+<li><strong>Sequencing analysis:</strong> CLIP-seq, RNA-seq, scRNA-seq, ATAC-seq, and small RNA.</li>
+<li><strong>Biological interpretation:</strong> functional genomics, variant analysis, and links to clinical phenotypes.</li>
+<li><strong>Across projects:</strong> pan-cancer multi-omics, metabolomics biomarkers, and chromatin accessibility.</li>
+</ul></article>
+<article><span class="skill-number">03 / COMPUTATION</span><h3>Programming &amp; data science</h3><ul>
+<li><strong>Analysis:</strong> Python, R, statistical modeling, and data visualization.</li>
+<li><strong>Machine learning:</strong> predictive modeling and deep convolutional neural networks for genomics.</li>
+<li><strong>Research infrastructure:</strong> analysis pipelines, SGE/HPC workflows, and web resources for sharing data.</li>
+</ul></article>
+<article><span class="skill-number">04 / HEALTHCARE</span><h3>Health informatics &amp; translation</h3><ul>
+<li><strong>Health data:</strong> data management, clinical evidence, and healthcare policy research.</li>
+<li><strong>Translational research:</strong> connecting molecular findings to disease mechanisms and therapeutic questions.</li>
+<li><strong>Currently building:</strong> life sciences business knowledge, case analysis, and consulting problem-solving.</li>
+</ul></article>
+<article><span class="skill-number">05 / PEOPLE</span><h3>Leadership &amp; advocacy</h3><ul>
+<li><strong>Student leadership:</strong> AMS president; International Student Advisory Board communication director.</li>
+<li><strong>Community work:</strong> international student rights, pre-arrival support, events, and social media outreach.</li>
+<li><strong>Science communication:</strong> teaching, mentoring, peer review, and cross-cultural collaboration.</li>
+</ul></article>
+<article><span class="skill-number">06 / COMMUNICATION</span><h3>Languages &amp; lifelong learning</h3><ul>
+<li><strong>Chinese &amp; English:</strong> connecting across the communities where I have studied and worked.</li>
+<li><strong>Learning French &amp; Spanish:</strong> ongoing language study.</li>
+<li><strong>Humanities foundation:</strong> writing, presenting, and making complex ideas understandable.</li>
+</ul></article></div>
+      </section>
       <section class="section" id="profile">
         <div class="section-heading"><p class="eyebrow">Profile</p><h2>Biology, data, and the people behind them.</h2></div>
         <div class="profile-intro"><p>I’m a Ph.D. candidate in Molecular Medicine at the University of Iowa. In the Boudreau lab, I study how AGO2, microRNAs, and messenger RNAs interact in human tissues, with a focus on atrial fibrillation.</p><p>My path began in the humanities, moved through neuroscience and health informatics, and brought me to a question I still follow: how can biological data help us understand disease and improve medicine?</p></div>
@@ -330,64 +399,6 @@
           </p></article></div>
         </div>
       </section>
-      <section class="section work-section" id="skills">
-        <div class="section-heading"><p class="eyebrow">Skills</p><h2>What I do, and what I’m learning.</h2><p>Practical methods, research experience, and the work I do with people.</p></div>
-        <div class="work-grid">
-<article><span class="skill-number">01 / EXPERIMENTS</span><h3>Experimental biology</h3><ul>
-<li><strong>RNA biology:</strong> human tissue preparation, AGO2 eCLIP, and miRNA–mRNA interactions.</li>
-<li><strong>Retinal research:</strong> retinal organoid studies, electroretinography, OCT, and behavioral assays.</li>
-<li><strong>Lab methods:</strong> immunohistochemistry / immunofluorescence, Western blotting, imaging, and troubleshooting.</li>
-</ul></article>
-<article><span class="skill-number">02 / SEQUENCING</span><h3>Bioinformatics &amp; genomics</h3><ul>
-<li><strong>Sequencing analysis:</strong> CLIP-seq, RNA-seq, scRNA-seq, ATAC-seq, and small RNA.</li>
-<li><strong>Biological interpretation:</strong> functional genomics, variant analysis, and links to clinical phenotypes.</li>
-<li><strong>Across projects:</strong> pan-cancer multi-omics, metabolomics biomarkers, and chromatin accessibility.</li>
-</ul></article>
-<article><span class="skill-number">03 / COMPUTATION</span><h3>Programming &amp; data science</h3><ul>
-<li><strong>Analysis:</strong> Python, R, statistical modeling, and data visualization.</li>
-<li><strong>Machine learning:</strong> predictive modeling and deep convolutional neural networks for genomics.</li>
-<li><strong>Research infrastructure:</strong> analysis pipelines, SGE/HPC workflows, and web resources for sharing data.</li>
-</ul></article>
-<article><span class="skill-number">04 / HEALTHCARE</span><h3>Health informatics &amp; translation</h3><ul>
-<li><strong>Health data:</strong> data management, clinical evidence, and healthcare policy research.</li>
-<li><strong>Translational research:</strong> connecting molecular findings to disease mechanisms and therapeutic questions.</li>
-<li><strong>Currently building:</strong> life sciences business knowledge, case analysis, and consulting problem-solving.</li>
-</ul></article>
-<article><span class="skill-number">05 / PEOPLE</span><h3>Leadership &amp; advocacy</h3><ul>
-<li><strong>Student leadership:</strong> AMS president; International Student Advisory Board communication director.</li>
-<li><strong>Community work:</strong> international student rights, pre-arrival support, events, and social media outreach.</li>
-<li><strong>Science communication:</strong> teaching, mentoring, peer review, and cross-cultural collaboration.</li>
-</ul></article>
-<article><span class="skill-number">06 / COMMUNICATION</span><h3>Languages &amp; lifelong learning</h3><ul>
-<li><strong>Chinese &amp; English:</strong> connecting across the communities where I have studied and worked.</li>
-<li><strong>Learning French &amp; Spanish:</strong> ongoing language study.</li>
-<li><strong>Humanities foundation:</strong> writing, presenting, and making complex ideas understandable.</li>
-</ul></article></div>
-      </section>
-      <section class="section publications" id="publications" aria-labelledby="publications-heading">
-        <div class="section-heading">
-          <p class="eyebrow">Selected work</p>
-          <h2 id="publications-heading">Publications</h2>
-        </div>
-        <div class="publication-list">
-          <article>
-            <h3><a href="https://doi.org/10.1186/s13059-023-03079-5" target="_blank" rel="noopener">The Evolution and Mutational Robustness of Chromatin Accessibility in Drosophila</a></h3>
-            <p>Genome Biology · 2023 · Co-author</p>
-            <a class="publication-doi" href="https://doi.org/10.1186/s13059-023-03079-5" target="_blank" rel="noopener">DOI: 10.1186/s13059-023-03079-5 ↗</a>
-          </article>
-          <article>
-            <h3><a href="https://doi.org/10.1145/3778067.3778071" target="_blank" rel="noopener">Discover Potential Biomarker of Alzheimer’s Disease Using Metabolomics Data</a></h3>
-            <p>ICBBS 2025 · ACM · Published online January 2026</p>
-            <a class="publication-doi" href="https://doi.org/10.1145/3778067.3778071" target="_blank" rel="noopener">DOI: 10.1145/3778067.3778071 ↗</a>
-          </article>
-        </div>
-        <div class="forthcoming-publication">
-          <p class="publication-status">Conference paper · publication pending</p>
-          <h3>Growth in Medicare Advantage Enrollment and Skilled Nursing Facility Occupancy</h3>
-          <p>ICHSM 2026 · Accepted for IOS Conference Proceedings</p>
-        </div>
-      </section>
-
       <section class="section future-section" id="goal">
         <p class="eyebrow">What comes next</p><h2>Connecting computation, mechanism, and medicine.</h2>
         <p>I hope to work in biotech or pharma as a scientist who understands both biological mechanisms and computational evidence. I want to help teams turn data into clearer hypotheses, stronger experiments, and better therapeutic decisions.</p>
