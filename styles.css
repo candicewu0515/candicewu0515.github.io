@@ -136,9 +136,13 @@ main, footer { width: min(1180px, calc(100% - 64px)); margin-inline: auto; }
 .publication-list h3, .forthcoming-publication h3 { font-size: 1.02rem; line-height: 1.5; }
 .publication-list h3 a:hover { color: var(--teal); text-decoration: underline; text-underline-offset: 3px; }
 .publication-list p, .forthcoming-publication > h3 + p { color: var(--muted); font-size: .8rem; margin: 6px 0 0; }
-.publication-doi { display: inline-block; margin-top: 4px; color: var(--teal); font-size: .76rem; overflow-wrap: anywhere; text-decoration: underline; text-underline-offset: 3px; }
+.publication-links { display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 14px; margin-top: 4px; }
+.publication-doi { display: inline-block; color: var(--teal); font-size: .76rem; overflow-wrap: anywhere; text-decoration: underline; text-underline-offset: 3px; }
 .publication-award { margin: 10px 0 0; color: var(--teal); font-size: .78rem; font-weight: 750; }
 .publication-award::before { content: "★ "; }
+.publication-pdf { color: var(--teal); font-size: .76rem; font-weight: 750; text-decoration: underline; text-underline-offset: 3px; }
+.publication-license { color: var(--muted); font-size: .7rem; }
+.publication-license a { text-decoration: underline; text-underline-offset: 2px; }
 .forthcoming-publication { margin-top: 14px; padding: 16px 18px; background: var(--paper); border-left: 3px solid var(--amber); }
 .publication-status { margin: 0 0 8px; color: var(--amber); font-size: .68rem; font-weight: 750; letter-spacing: .05em; text-transform: uppercase; }
 .code-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; }

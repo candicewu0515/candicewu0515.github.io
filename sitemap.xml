@@ -4,7 +4,7 @@
     <loc>https://candicewu0515.github.io/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://candicewu0515.github.io/" />
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://candicewu0515.github.io/zh.html" />
-    <lastmod>2026-10-28</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -12,8 +12,23 @@
     <loc>https://candicewu0515.github.io/zh.html</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://candicewu0515.github.io/" />
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://candicewu0515.github.io/zh.html" />
-    <lastmod>2026-10-28</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://candicewu0515.github.io/papers/wu-2026-icbb-lasso-colorectal-cancer.pdf</loc>
+    <lastmod>2026-10-30</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://candicewu0515.github.io/papers/wu-2024-retinal-transplantation-erg.pdf</loc>
+    <lastmod>2026-10-30</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://candicewu0515.github.io/papers/fan-wu-zhang-2023-global-temperature-economy.pdf</loc>
+    <lastmod>2026-10-30</lastmod>
+    <priority>0.8</priority>
   </url>
 </urlset>
