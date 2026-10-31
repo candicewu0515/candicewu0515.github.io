@@ -135,8 +135,10 @@ main, footer { width: min(1180px, calc(100% - 64px)); margin-inline: auto; }
 .publication-list article { padding: 16px 0; border-top: 1px solid var(--line); }
 .publication-list h3, .forthcoming-publication h3 { font-size: 1.02rem; line-height: 1.5; }
 .publication-list h3 a:hover { color: var(--teal); text-decoration: underline; text-underline-offset: 3px; }
-.publication-list p, .forthcoming-publication > p:last-child { color: var(--muted); font-size: .8rem; margin: 6px 0 0; }
+.publication-list p, .forthcoming-publication > h3 + p { color: var(--muted); font-size: .8rem; margin: 6px 0 0; }
 .publication-doi { display: inline-block; margin-top: 4px; color: var(--teal); font-size: .76rem; overflow-wrap: anywhere; text-decoration: underline; text-underline-offset: 3px; }
+.publication-award { margin: 10px 0 0; color: var(--teal); font-size: .78rem; font-weight: 750; }
+.publication-award::before { content: "★ "; }
 .forthcoming-publication { margin-top: 14px; padding: 16px 18px; background: var(--paper); border-left: 3px solid var(--amber); }
 .publication-status { margin: 0 0 8px; color: var(--amber); font-size: .68rem; font-weight: 750; letter-spacing: .05em; text-transform: uppercase; }
 .code-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; }
