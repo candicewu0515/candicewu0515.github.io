@@ -231,3 +231,29 @@ html:lang(zh) h2 { font-size: clamp(1.75rem, 2.6vw, 2.65rem); }
 html:lang(zh) .eyebrow, html:lang(zh) .chapter-label, html:lang(zh) .skill-number { letter-spacing: .06em; }
 html:lang(zh) .story-body { max-width: 760px; }
 html:lang(zh) .hero-lede { line-height: 1.9; }
+
+/* Compact skill cards: readable labels, decorative icons, optional detail. */
+.work-grid .skill-card { border-radius: 18px; border-top-width: 1px; padding: 24px; }
+.skill-topline { display: flex; align-items: center; gap: 12px; margin-bottom: 18px; }
+.skill-topline .skill-number { margin: 0; color: var(--muted); }
+.skill-icon { display: grid; place-items: center; flex: 0 0 48px; height: 48px; border-radius: 16px; background: #e5f5ee; font-size: 1.65rem; line-height: 1; }
+.skill-card:nth-child(2) .skill-icon { background: #e9efff; }
+.skill-card:nth-child(3) .skill-icon { background: #fff0df; }
+.skill-card:nth-child(4) .skill-icon { background: #ffeaf0; }
+.skill-card:nth-child(5) .skill-icon { background: #edf4df; }
+.skill-card:nth-child(6) .skill-icon { background: #f0eaff; }
+.dark .skill-icon { background: #294237; }
+.dark .skill-card:nth-child(2) .skill-icon { background: #29384f; }
+.dark .skill-card:nth-child(3) .skill-icon { background: #473c2a; }
+.dark .skill-card:nth-child(4) .skill-icon { background: #472e3a; }
+.dark .skill-card:nth-child(5) .skill-icon { background: #36432c; }
+.dark .skill-card:nth-child(6) .skill-icon { background: #3b3250; }
+.skill-tags { display: flex; flex-wrap: wrap; align-content: start; gap: 8px; margin-top: 16px; }
+.skill-tags span { padding: 5px 10px; border: 1px solid var(--line); border-radius: 999px; background: var(--paper); color: var(--ink); font-size: .76rem; line-height: 1.5; }
+.skill-note { display: block; margin-top: 8px; color: var(--muted); font-size: .72rem; }
+.skill-details { margin-top: 20px; border-top: 1px solid var(--line); padding-top: 14px; }
+.skill-details summary { width: fit-content; color: var(--teal); font-size: .8rem; font-weight: 650; cursor: pointer; }
+.skill-details summary:hover { text-decoration: underline; text-underline-offset: 4px; }
+.skill-details summary:focus-visible { outline: 3px solid var(--blue); outline-offset: 5px; border-radius: 2px; }
+.skill-details ul { margin-top: 10px; }
+.skill-details li:first-child { border-top: 0; padding-top: 0; }

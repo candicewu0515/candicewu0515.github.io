@@ -4,7 +4,7 @@ A static personal website published with GitHub Pages from `main` and the reposi
 
 ## Awards & competitions
 
-- **Second place — OneAquaHealth IEEE Global Hackathon 2026.** StreamSignal; 174 valid submissions; winners announced November 3, 2026. [Project](https://github.com/candicewu0515/streamsignal).
+- **EU Horizon Europe Project (co-hosted with IEEE) — Second Place, OneAquaHealth Global Hackathon, 2026.** StreamSignal; selected from 213 international submissions. [Project](https://github.com/candicewu0515/streamsignal).
 - **Semifinalist — Midwest Healthcare Case Competition (MHCC), 2026.**
 - **Top 40% — Penn Healthcare Case Competition (PHCC), 2026.**
 
