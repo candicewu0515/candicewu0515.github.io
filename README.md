@@ -2,6 +2,16 @@
 
 A static personal website published with GitHub Pages from `main` and the repository root.
 
+## Awards & competitions
+
+- **Second place — OneAquaHealth IEEE Global Hackathon 2026.** StreamSignal; 174 valid submissions; winners announced November 3, 2026. [Project](https://github.com/candicewu0515/streamsignal).
+- **Semifinalist — Midwest Healthcare Case Competition (MHCC), 2026.**
+- **Top 40% — Penn Healthcare Case Competition (PHCC), 2026.**
+
+[View the awards on the website](https://candicewu0515.github.io/#awards).
+
+## Website structure
+
 - `index.html` and `zh.html`: complete English and Simplified Chinese pages. Keep the structure, anchor IDs, and paragraph order aligned when updating the copy; each page remains readable without JavaScript.
 - `language.js`: remembers language choice and preserves the corresponding reading position when switching. Explicit `?lang=en` / `?lang=zh` links override the preference.
 - `styles.css`: responsive layouts, bounded photos, reading column, and light/dark themes.
@@ -10,3 +20,4 @@ A static personal website published with GitHub Pages from `main` and the reposi
 - `assets/`: original photographs. Gallery photographs use individual focal positions to keep the person visible, with links to the full originals; story images retain their natural proportions. Images below the hero load lazily and reserve their dimensions.
 
 To preview, serve this directory with a static HTTP server. Check desktop, tablet, and mobile widths, direct chapter links, keyboard focus, and the page with JavaScript disabled. No build step is required.
+
